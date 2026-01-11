@@ -75,7 +75,7 @@
 }
 
 .box.boss_blog-cat .box-content .box-category li a:hover span {
-    color: #118acb;
+    color: #7F447A;
 }
 
 .box.boss-recent-post .box-heading span {
@@ -212,7 +212,7 @@
 }
 
 .bt-recent-comments .box-content .recent-comment-item .comment-by {
-    color: #118acb;
+    color: #7F447A;
 }
 
 .bt-recent-comments .box-content .recent-comment-item .time-stamp {
@@ -276,7 +276,7 @@
 .article-filter .display .btn-grid:hover,
 .article-filter .display .btn-list.active,
 .article-filter .display .btn-grid.active {
-    color: #118acb;
+    color: #7F447A;
 }
 
 .article-filter .display .btn-list {
@@ -386,7 +386,7 @@
 
 .article-layout .article-image,
 .article-related .content-articles .relt-article .image {
-    background: #118acb;
+    background: #7F447A;
 }
 
 .article-layout .article-image:hover img,
@@ -406,7 +406,7 @@
 }
 
 .article-name a:hover {
-    color: #118acb;
+    color: #7F447A;
 }
 
 .article-layout .article_dt {
@@ -539,7 +539,7 @@ a.btn-readmore:hover,
 .boss_article-detail .article-title .date-post .comment-count {
     font-size: 13px;
     line-height: 22px;
-    color: #118acb;
+    color: #7F447A;
 }
 
 .boss_article-detail .article-title .date-post .comment-count:before {
@@ -586,7 +586,7 @@ a.btn-readmore:hover,
 }
 
 .boss_article-action .tags li a:hover {
-    color: #118acb;
+    color: #7F447A;
 }
 
 .boss_article-action .tags li+li a:before {
@@ -659,11 +659,11 @@ a.btn-readmore:hover,
 }
 
 .article-related li .name a:hover {
-    color: #118acb;
+    color: #7F447A;
 }
 
 .article-related li .comment-count a {
-    color: #118acb;
+    color: #7F447A;
 }
 
 .article-related li .comment-count a:before {
@@ -794,7 +794,7 @@ a.btn-readmore:hover,
 
 .comment-item .comment-item-header .comment-by span {
     font-weight: 700;
-    color: #118acb;
+    color: #7F447A;
     text-transform: uppercase;
     margin-left: 5px;
 }

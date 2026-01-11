@@ -23,15 +23,15 @@
                     <tr>
                         <td width="50%">
                             <div id="logo " class="desktop-logo"
-                                style="font-size: 18px;display: flex;align-items: center;color: #118acb;letter-spacing: 1px;line-height: 55px;font-family: 'Roboto Condensed', sans-serif;">
+                                style="font-size: 18px;display: flex;align-items: center;color: #7F447A;letter-spacing: 1px;line-height: 55px;font-family: 'Roboto Condensed', sans-serif;">
                                 <!-- <img src="images/logo.png" title="Drug Store" alt="Drug Store" class="img-responsive" /> -->
                                 <span
-                                    style="width: 35px;height: 35px;line-height: 35px;background: transparent;display: inline-block;text-align: center;border-radius: 50%;border: 5px dotted #118acb;padding: 5px;font-size: 16px;margin-right: 5px;">OKS</span>
+                                    style="width: 35px;height: 35px;line-height: 35px;background: transparent;display: inline-block;text-align: center;border-radius: 50%;border: 5px dotted #7F447A;padding: 5px;font-size: 16px;margin-right: 5px;">OKS</span>
                                 OnlineKamagraStore
                             </div>
                         </td>
                         <td width="50%"
-                            style="background: #118acb;border-left:15px solid #fff;font-size: 24px;font-weight:bold;letter-spacing:-1px;text-align: center;color: white;">
+                            style="background: #7F447A;border-left:15px solid #fff;font-size: 24px;font-weight:bold;letter-spacing:-1px;text-align: center;color: white;">
                             Order confirmation</td>
                         <td></td>
                     </tr>

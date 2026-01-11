@@ -79,6 +79,18 @@
                                 </p>
                             </a>
                         </li>
+                        <!-- ragini -->
+                        <li class="nav-item has-treeview">
+                            <a href="{{ route('admin.category.list') }}"
+                                class="nav-link {{ Request::fullUrl('admin.category.list') == route('admin.category.list') ? 'active' : '' }}">
+                                <i class="fa fa-medkit" aria-hidden="true"></i>
+                                <p>
+                                    Category
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                        </li>
+
                         <li class="nav-item has-treeview">
                             <a href="{{ route('admin.product-variant.list') }}"
                                 class="nav-link {{ Request::fullUrl('admin.product-variant.list') == route('admin.product-variant.list') ? 'active' : '' }}">

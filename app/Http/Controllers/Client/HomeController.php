@@ -24,6 +24,7 @@ use App\BlogModel;
 use App\BlogReview;
 use App\StaticModel;
 use App\StaticContent;
+use App\Models\Admin\Category;
 
 class HomeController extends Controller
 {
@@ -34,24 +35,21 @@ class HomeController extends Controller
     }
 
     public function index()
-    {
-        // echo 'hi';exit;
-        $main_data  = Users_detail::where('status', 1)->where('id', 1)->where('users_id', 1)->get()->first();
-        $data['product_list'] = Product::where('status',1)->select('name', 'slug', 'id', 'mrp', 'price', 'subtitle', 'discount', 'image', 'image_path', 'gender_id')->get();
-        $best_prod=Product::where('status',1)->select('name', 'slug', 'id', 'mrp', 'price', 'subtitle', 'discount', 'image', 'image_path', 'gender_id')->get();
-        $data['best_product'] = json_decode($best_prod,true);
-        $data['product_type']=ProductType::get();
-        // $data['collections']=Gender::get();
-        // $data['women_product_list'] = Product::with('gender')->where('gender_id', 2)->select('name', 'slug', 'id', 'mrp', 'price', 'subtitle', 'discount', 'image', 'image_path', 'gender_id')->get();
-        // $data['banner_img_product'] = Product::select('name', 'slug', 'id', 'mrp', 'price', 'subtitle', 'discount', 'image', 'image_path')->get()->first();
-        $data['banners']  =  AdminBannerModel::get();
-        $data['static']=StaticModel::where('id',1)->first();
-        $data['testimonial']=Testimonials::get();
-        $data['static_seo']=StaticContent::where('title','home')->first();
-        // $data['youtube_link_list'] = YoutubeLink::select('id', 'name', 'youtube_link')->where('status', 1)->get();
-        // dd($data);
-        return $this->_display('client2.index', $data);
-    }
+        {
+            $data['product_list'] = Product::where('status', 1)->select('name', 'slug', 'id', 'mrp', 'price', 'subtitle', 'discount', 'image', 'image_path', 'gender_id')->get();
+            $best_prod = Product::where('status', 1)->select('name', 'slug', 'id', 'mrp', 'price', 'subtitle', 'discount', 'image', 'image_path', 'gender_id')->get();
+            $data['best_product'] = json_decode($best_prod, true);
+            $data['product_type'] = ProductType::get();
+            $data['banners'] = AdminBannerModel::get();
+            $data['static'] = StaticModel::where('id', 1)->first();
+            $data['testimonial'] = Testimonials::get();
+            $data['static_seo'] = StaticContent::where('title', 'home')->first();
+            $data['categories'] = Category::select('id', 'name')->where('status', 1)->get();
+            $data['products_list'] = Product::where('status', 1)->get();
+
+            return $this->_display('client2.index', $data);
+        }
+
 
     public function terms_and_refund_policy()
     {
@@ -88,6 +86,8 @@ class HomeController extends Controller
         $data = array();
         return $this->_display('client2.about_us', $data);
     }
+    
+    
 
     public function change_password()
     {
@@ -237,12 +237,23 @@ class HomeController extends Controller
         $data = array();
         return $this->_display('client2.partner-register', $data);
     }
-     public function thank_you(Request $request)
+
+    public function thank_you(Request $request)
     {
+        
         $data = array();
-        $data['order_id']=request()->input('order_id');
+
+        $data['categories'] = Category::select('id', 'name')->where('status', 1)->get(); //ragini
+        $data['order_id']=request()->input('order_id'); 
+        $data['user_id'] = session('user_id'); // Debug here
+        $data['shipping_firstname'] = session('shipping_firstname'); // Debug here
+        // $data['user_id'] = $request->input('user_id'); // Retrieve user_id
+        // $data['shipping_firstname'] = $request->input('shipping_firstname'); // Retrieve shipping_firstname
+    
+        // dd($data);
         return $this->_display('client2.thank-you', $data);
     }
+    
       public function blog()
     {
         $data = array();

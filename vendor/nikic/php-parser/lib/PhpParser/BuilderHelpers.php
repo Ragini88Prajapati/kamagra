@@ -6,6 +6,7 @@ use PhpParser\Node\ComplexType;
 use PhpParser\Node\Expr;
 use PhpParser\Node\Identifier;
 use PhpParser\Node\Name;
+use PhpParser\Node\Name\FullyQualified;
 use PhpParser\Node\NullableType;
 use PhpParser\Node\Scalar;
 use PhpParser\Node\Stmt;
@@ -15,7 +16,8 @@ use PhpParser\Node\Stmt;
  *
  * @internal
  */
-final class BuilderHelpers {
+final class BuilderHelpers
+{
     /**
      * Normalizes a node: Converts builder objects to nodes.
      *
@@ -23,7 +25,7 @@ final class BuilderHelpers {
      *
      * @return Node The normalized node
      */
-    public static function normalizeNode($node): Node {
+    public static function normalizeNode($node) : Node {
         if ($node instanceof Builder) {
             return $node->getNode();
         }
@@ -44,7 +46,7 @@ final class BuilderHelpers {
      *
      * @return Stmt The normalized statement node
      */
-    public static function normalizeStmt($node): Stmt {
+    public static function normalizeStmt($node) : Stmt {
         $node = self::normalizeNode($node);
         if ($node instanceof Stmt) {
             return $node;
@@ -64,7 +66,7 @@ final class BuilderHelpers {
      *
      * @return Identifier The normalized identifier
      */
-    public static function normalizeIdentifier($name): Identifier {
+    public static function normalizeIdentifier($name) : Identifier {
         if ($name instanceof Identifier) {
             return $name;
         }
@@ -102,7 +104,7 @@ final class BuilderHelpers {
      *
      * @return Name The normalized name
      */
-    public static function normalizeName($name): Name {
+    public static function normalizeName($name) : Name {
         if ($name instanceof Name) {
             return $name;
         }
@@ -214,11 +216,11 @@ final class BuilderHelpers {
      * Normalizes a value: Converts nulls, booleans, integers,
      * floats, strings and arrays into their respective nodes
      *
-     * @param Node\Expr|bool|null|int|float|string|array $value The value to normalize
+     * @param Node\Expr|bool|null|int|float|string|array|\UnitEnum $value The value to normalize
      *
      * @return Expr The normalized value
      */
-    public static function normalizeValue($value): Expr {
+    public static function normalizeValue($value) : Expr {
         if ($value instanceof Node\Expr) {
             return $value;
         }
@@ -236,11 +238,11 @@ final class BuilderHelpers {
         }
 
         if (is_int($value)) {
-            return new Scalar\Int_($value);
+            return new Scalar\LNumber($value);
         }
 
         if (is_float($value)) {
-            return new Scalar\Float_($value);
+            return new Scalar\DNumber($value);
         }
 
         if (is_string($value)) {
@@ -253,12 +255,12 @@ final class BuilderHelpers {
             foreach ($value as $itemKey => $itemValue) {
                 // for consecutive, numeric keys don't generate keys
                 if (null !== $lastKey && ++$lastKey === $itemKey) {
-                    $items[] = new Node\ArrayItem(
+                    $items[] = new Expr\ArrayItem(
                         self::normalizeValue($itemValue)
                     );
                 } else {
                     $lastKey = null;
-                    $items[] = new Node\ArrayItem(
+                    $items[] = new Expr\ArrayItem(
                         self::normalizeValue($itemValue),
                         self::normalizeValue($itemKey)
                     );
@@ -266,6 +268,10 @@ final class BuilderHelpers {
             }
 
             return new Expr\Array_($items);
+        }
+
+        if ($value instanceof \UnitEnum) {
+            return new Expr\ClassConstFetch(new FullyQualified(\get_class($value)), new Identifier($value->name));
         }
 
         throw new \LogicException('Invalid value');
@@ -278,7 +284,7 @@ final class BuilderHelpers {
      *
      * @return Comment\Doc The normalized doc comment
      */
-    public static function normalizeDocComment($docComment): Comment\Doc {
+    public static function normalizeDocComment($docComment) : Comment\Doc {
         if ($docComment instanceof Comment\Doc) {
             return $docComment;
         }
@@ -297,7 +303,8 @@ final class BuilderHelpers {
      *
      * @return Node\AttributeGroup The Attribute Group
      */
-    public static function normalizeAttribute($attribute): Node\AttributeGroup {
+    public static function normalizeAttribute($attribute) : Node\AttributeGroup
+    {
         if ($attribute instanceof Node\AttributeGroup) {
             return $attribute;
         }
@@ -313,12 +320,12 @@ final class BuilderHelpers {
      * Adds a modifier and returns new modifier bitmask.
      *
      * @param int $modifiers Existing modifiers
-     * @param int $modifier Modifier to set
+     * @param int $modifier  Modifier to set
      *
      * @return int New modifiers
      */
-    public static function addModifier(int $modifiers, int $modifier): int {
-        Modifiers::verifyModifier($modifiers, $modifier);
+    public static function addModifier(int $modifiers, int $modifier) : int {
+        Stmt\Class_::verifyModifier($modifiers, $modifier);
         return $modifiers | $modifier;
     }
 
@@ -326,8 +333,8 @@ final class BuilderHelpers {
      * Adds a modifier and returns new modifier bitmask.
      * @return int New modifiers
      */
-    public static function addClassModifier(int $existingModifiers, int $modifierToSet): int {
-        Modifiers::verifyClassModifier($existingModifiers, $modifierToSet);
+    public static function addClassModifier(int $existingModifiers, int $modifierToSet) : int {
+        Stmt\Class_::verifyClassModifier($existingModifiers, $modifierToSet);
         return $existingModifiers | $modifierToSet;
     }
 }

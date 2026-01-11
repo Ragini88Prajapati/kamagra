@@ -22,6 +22,8 @@ use Razorpay\Api\Errors\SignatureVerificationError;
 // use Srmklive\PayPal\Services\ExpressCheckout;
 use Srmklive\PayPal\Services\PayPal as PayPalClient;
 
+use App\Models\Admin\Category; //ragini
+
 class PaymentGatewayController extends Controller
 {
     public $data = array();
@@ -54,6 +56,7 @@ class PaymentGatewayController extends Controller
 
     public function checkout_form(){
         $data=array();
+        $data['categories'] = Category::select('id', 'name')->where('status', 1)->get(); //ragini
         $cart_data = CartController::get_cart_details();
         $data['cart_data']=$cart_data;
         // dd($cart_data);
@@ -69,7 +72,7 @@ class PaymentGatewayController extends Controller
             return redirect(route('product.show-cart'));
         }
     }
-
+    
     public function save_address_and_deliver()
     {
         $cart_data = CartController::get_cart_details();
@@ -419,46 +422,7 @@ class PaymentGatewayController extends Controller
 
     public function processTransaction(Request $request)
     {
-        // dd($request->input());
-        // if($request->shipping_address_type == 'existing'){
-        //     $request->validate([
-        //         'shipping_address_id'=>'required',
-        //     ]);
-            
-        // }else if($request->shipping_address_type == 'new'){
-        //     $request->validate([
-        //         'shipping_firstname'=>'required',
-        //         'shipping_lastname'=>'required',
-        //         'shipping_email_id'=>'required',
-        //         'shipping_mobile_number'=>'required',
-        //         'shipping_address'=>'required',
-        //         'shipping_city'=>'required',
-        //         'shipping_pincode'=>'required',
-        //         'shipping_country'=>'required',
-        //         'shipping_state_id'=>'required',
-        //         'password' => 'nullable|min:6|required_with:confirm_password|same:confirm_password',
-        //     ]);
-        // }
-        // if($request->same_billing_address!='1'){
-        //     if($request->billing_address_type == 'existing'){
-        //         $request->validate([
-        //             'billing_address_id'=>'required',
-        //         ]);
-                
-        //     }else if($request->billing_address_type == 'new'){
-        //         $request->validate([
-        //             'billing_firstname'=>'required',
-        //             'billing_lastname'=>'required',
-        //             'billing_address'=>'required',
-        //             'billing_address2'=>'required',
-        //             'billing_city'=>'required',
-        //             'billing_zip_code'=>'required',
-        //             'billing_country'=>'required',
-        //             'billing_state'=>'required',
-        //             // 'confirm_password'=>'required',
-        //         ]);
-        //     }
-        // }
+        
         $shipping_firstname = $request->shipping_firstname ?? '';
         $shipping_lastname = $request->shipping_lastname ?? '';
         $shipping_email_id = $request->shipping_email_id ?? '';
@@ -493,7 +457,7 @@ class PaymentGatewayController extends Controller
         $sub_total = $request->sub_total ?? '';
         $total = $request->total ?? '';
         // $shipping_rate = $request->shipping_rate ?? '';
-
+            // dd('fhgfhg');
         if(Auth::check()){
             $users_id = Auth::user()->id;
         }else{
@@ -617,12 +581,35 @@ class PaymentGatewayController extends Controller
         
         $cart_data = CartController::get_cart_details();
 
-        $last_order = Order::orderBy('id','desc')->limit(0,1)->first();
-        if($last_order){
-            $auto_order_id = 'OID'.(substr($last_order->auto_order_id,3) + 1);
-        }else{
-            $auto_order_id = 'OID1';
+        // Define the starting number
+        $starting_number = 235680;
+
+        // Get the last order
+        $last_order = Order::orderBy('id', 'desc')->first();
+
+        // Determine the next auto_order_id
+        if ($last_order) {
+            // Extract the numeric part of the last auto_order_id
+            $last_order_id = $last_order->auto_order_id;
+            
+            // Check if the last order ID starts with 'KKS'
+            if (strpos($last_order_id, 'KKS') === 0) {
+                // Extract numeric part after 'KKS'
+                $last_order_id_number = intval(substr($last_order_id, 3));
+                $next_order_id_number = $last_order_id_number + 1;
+            } else {
+                // Handle unexpected format, initialize with starting number
+                $next_order_id_number = $starting_number;
+            }
+        } else {
+            // Initialize if no previous orders exist
+            $next_order_id_number = $starting_number;
         }
+
+        // Format the new auto_order_id
+        $auto_order_id = 'KKS' . str_pad($next_order_id_number, 6, '0', STR_PAD_LEFT);
+
+
         $order_id = Order::insertGetId([
             'auto_order_id' => $auto_order_id,
             'shipping_firstname' => $shipping_firstname,
@@ -658,22 +645,24 @@ class PaymentGatewayController extends Controller
             'created_at' => date('Y-m-d H:i:s'),
         ]);
 
-        foreach($cart_data['cart_product_list'] as $item){
-            $res = OrderProduct::insert([
-                'order_id'=>$order_id,
-                'product_id'=>$item['product_id'],
-                'variant_id'=>$item['id'],
-                // 'user_cart_id'=>$item['id'],
-                'price'=>$item['price'],
-                'total_price'=>$item['total_price'],
-                'quantity'=>$item['quantity'],
-                'created_at'=>date('Y-m-d H:i:s'),
-            ]);
+        // comment by me ragini
+        
+        // foreach($cart_data['cart_product_list'] as $item){
+        //     $res = OrderProduct::insert([
+        //         'order_id'=>$order_id,
+        //         'product_id'=>$item['product_id'],
+        //         'variant_id'=>$item['id'],
+        //         // 'user_cart_id'=>$item['id'],
+        //         'price'=>$item['price'],
+        //         'total_price'=>$item['total_price'],
+        //         'quantity'=>$item['quantity'],
+        //         'created_at'=>date('Y-m-d H:i:s'),
+        //     ]);
 
-            if($res == 1){
-                $updatecart = User_cart::where(['product_id'=>$item['product_id'],'users_id'=>$users_id])->update(['status'=>3]);
-            }
-        }
+        //     if($res == 1){
+        //         $updatecart = User_cart::where(['product_id'=>$item['product_id'],'users_id'=>$users_id])->update(['status'=>3]);
+        //     }
+        // }
 
         if($payment_method == 'paypal'){
             $provider = new PayPalClient;
@@ -754,6 +743,7 @@ class PaymentGatewayController extends Controller
                 $getVariant[]=$value;
             }
             $userData['orders']=$getVariant;
+            // dd('ragini');
             if($res == 1){
                 // Mail::send('client2.email.invoice_confirm', $userData, function($message) use ($userData) {
                 //     $message->to($userData['shipping_email_id'], 'Online Kamagra Store')->subject
@@ -762,13 +752,31 @@ class PaymentGatewayController extends Controller
                 //     $message->from('support@onlinekamagrastore.com','Online Kamagra Store');
                 // });
                 // dd($userData);
-                Mail::send('client2.email.invoice_confirm', $userData, function($message) use ($userData) {
-                    $message->to($userData['shipping_email_id'],'Online Kamagra Store')->subject
-                    ('Online Kamagra Store Order Confirmation');
-                    $message->from('support@onlinekamagrastore.com','Online Kamagra Store');
-                });
+
+                // comment by ragini
+                // Mail::send('client2.email.invoice_confirm', $userData, function($message) use ($userData) {
+                //     $message->to($userData['shipping_email_id'],'Online Kamagra Store')->subject
+                //     ('Onlne Kamagra Store Order Confirmation');
+                //     $message->from('support@onlinekamagrastore.com','Online Kamagra Store');
+                // });
+                // dd('prajapati');
                 setcookie('product_cart', $cookie_product_cart, time() + (86400 * 30), "/");
-                return redirect(route('home.thank-you',['order_id'=>$userData['auto_order_id']]));
+                
+                // Store user_id and shipping_firstname in the session
+                session()->put('user_id', $users_id);
+                session()->put('shipping_firstname', $shipping_firstname);
+                // dd(session()->all());
+                // dd('arvind');
+                return redirect(route('home.thank-you',['order_id'=>$userData['auto_order_id']])); 
+                
+                //this is ragini code
+                // return redirect()->route('home.thank-you', [
+                //     'order_id' => $auto_order_id,
+                //     'user_id' => $users_id,
+                //     'shipping_firstname' => $shipping_firstname
+                // ]); if you want to show user_name ans shipping_information in url
+
+                // return redirect()->route('home.thank-you');
             }
         }
     }

@@ -9,10 +9,11 @@ use App\Models\Client\Product;
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <!-- /Added by HTTrack -->
 
-<head> 
+<head>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    @yield('SEO_Part') 
+    @yield('SEO_Part')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Webstrot">
     <link rel="alternate" href="https://www.onlinekamagrastore.com/" hreflang="en-in" />
@@ -21,17 +22,13 @@ use App\Models\Client\Product;
     <!-- Standard -->
     <link rel="shortcut icon" href="https://onlinekamagrastore.com/assets/client2/images/new-latest-logo.png">
     <!-- Retina iPad Touch Icon-->
-    <link rel="apple-touch-icon" sizes="144x144"
-        href="https://onlinekamagrastore.com/assets/client2/images/new-latest-logo.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://onlinekamagrastore.com/assets/client2/images/new-latest-logo.png">
     <!-- Retina iPhone Touch Icon-->
-    <link rel="apple-touch-icon" sizes="114x114"
-        href="https://onlinekamagrastore.com/assets/client2/images/new-latest-logo.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://onlinekamagrastore.com/assets/client2/images/new-latest-logo.png">
     <!-- Standard iPad Touch Icon-->
-    <link rel="apple-touch-icon" sizes="72x72"
-        href="https://onlinekamagrastore.com/assets/client2/images/new-latest-logo.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://onlinekamagrastore.com/assets/client2/images/new-latest-logo.png">
     <!-- Standard iPhone Touch Icon-->
-    <link rel="apple-touch-icon" sizes="57x57"
-        href="https://onlinekamagrastore.com/assets/client2/images/new-latest-logo.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://onlinekamagrastore.com/assets/client2/images/new-latest-logo.png">
 
     <!-- ================= Google Fonts ================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,12 +38,8 @@ use App\Models\Client\Product;
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet" type="text/css" />
 
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Great+Vibes&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Great+Vibes&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Great+Vibes&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Great+Vibes&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/client2/css/bootstrap.min.css') }}" media="screen" />
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/client2/css/font-awesome.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/client2/css/stylesheet1.css') }}" />
@@ -62,15 +55,16 @@ use App\Models\Client\Product;
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/client2/css/boss_filterproduct.css') }}" />
 
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/client2/css/custom2.12.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/client2/css/revolutionslider_settings.css') }}"
-        media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/client2/css/revolutionslider_settings.css') }}" media="screen" />
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/client2/css/resolution.css') }}" />
 
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/client2/css/bossblog.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sevillana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!--<meta name="description" content="kamagra bestellen bei onlinekamagrastore  günstigen und schnellen Lieferzeiten. Kamagra kaufen in Europa - Kamagra online bestellen und günstig kaufen.">-->
     <!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -79,35 +73,38 @@ use App\Models\Client\Product;
     <!-- <script src='../../../../google_analytics_auto.js'></script> -->
     @yield('css')
     <style>
-    .error {
-        color: red !important;
-    }
+        .error {
+            color: red !important;
+        }
 
-    .btn.btn-gray,
-    #cart>.btn,
-    .jGrowl-button .buttons .btn,
-    .compare-info .btn-wishlist,
-    #cart .dropdown-menu .cart_bottom .buttons .btn {
-        border-color: #2696B8 !important;
-        background: #2696B8 !important;
-    }
+        .btn.btn-gray,
+        #cart>.btn,
+        .jGrowl-button .buttons .btn,
+        .compare-info .btn-wishlist,
+        #cart .dropdown-menu .cart_bottom .buttons .btn {
+            border-color: #7F447A !important;
+            background: #7F447A !important;
+        }
 
-    .mega-menu>ul.nav>li>a {
-        font-weight: bold !important;
-        letter-spacing: 0.5px !important;
+        .mega-menu>ul.nav>li>a {
+            font-weight: bold !important;
+            letter-spacing: 0.5px !important;
 
-    }
+        }
     </style>
 
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFEPCPXM1X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFEPCPXM1X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-FFEPCPXM1X');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FFEPCPXM1X');
+    </script>
 
 </head>
 
@@ -128,131 +125,87 @@ use App\Models\Client\Product;
     </div> -->
     <!-- /#bt_loading -->
 
-    <div id="bt_container" class="bt-wide">
-        <div id="bt_header" class="">
-            <div class="container-flex">
-                <div class="row marque-row">
-                    <div class="col-lg-12">
-                        <marquee width="100%" direction="left">
-                            <!--10% extra Pillen und kostenloser Versand ab einem Bestellwert von 200€-->
-                            Erhalten Sie bei jedem Einkauf ein beliebiges Produkt Ihrer Wahl gratis dazu! 💌
-                        </marquee>
-                    </div>
-                </div>
-            </div>
-
-            <nav id="top">
+    <div id="bt_header" class="" style="width: 100%;">
+            <!-- Desktop Header -->
+            <header class="d-none d-md-block" style="background: #f0f8ff; padding: 15px 0 0 0;">
                 <div class="container">
-                    <div class="row">
-                        <div id="left_top_links" class="nav pull-left"> <a href="mailto:support@onlinekamagrastore.com"><i class="fa fa-envelope-o"></i>
-                                <span> E-MAIL: support@onlinekamagrastore.com </span></a> </div>
-                        <div id="right_top_links" class="nav pull-right">
-                            <div class="bt-language">
-                                <form method="post" enctype="multipart/form-data" class="language">
-                                    <div class="btn-group">
-                                        <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                                            <span>Sprache</span>
-                                            <i class="fa fa-angle-down"></i>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#googtrans(en|en)" class="lang-select" data-lang="en"><span
-                                                        class="text-left">Englisch</span><span class="text-right"><img
-                                                            src="{{ asset('assets/client2/images/flags/gb.png')}}"
-                                                            alt="English" title="English" /></span></a>
-                                            </li>
-                                            <li><a href="#googtrans(en|de)" class="lang-select" data-lang="de"><span
-                                                        class="text-left">Deutsch</span><span class="text-right"><img
-                                                            src="{{ asset('assets/client2/images/german-flag.png')}}"
-                                                            alt="German" title="German" /></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <input type="hidden" name="code" value="" />
-                                    <input type="hidden" name="redirect" value="" />
-                                </form>
+                    <div class="row align-items-center" style="display: flex; align-items: center;">
+                        <!-- Logo -->
+                        <div class="col-md-4">
+                            <a href="{{route('home.index')}}">
+                                <img src="https://www.kamagraoriginal.to/images/logo.png?v=10" alt="Kamagra Original" style="max-height: 55px;">
+                            </a>
+                        </div>
+                        
+                        <!-- Center Banners -->
+                        <div class="col-md-5">
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                                <!-- Customers Banner -->
+                                <div style="display: flex; align-items: center; margin-right: 15px; height: 46px; border-radius: 20px 0 0 20px; overflow: hidden;">
+                                     <!-- German Flag Gradient -->
+                                     <div style="padding: 0; width: 60px; height: 100%; background: linear-gradient(to bottom, #000 33%, #d00 33%, #d00 66%, #fc0 66%); border-radius: 25px 0 0 25px;"></div>
+                                     <div style="background: #008be3; color: white; height: 100%; padding: 2px 15px 2px 10px; font-family: 'Open Sans', sans-serif; line-height: 1.1; border-radius: 0 25px 25px 0; position: relative; left: -10px; display: flex; flex-direction: column; justify-content: center;">
+                                         <span style="font-size: 11px; display: block;">Mehr als</span>
+                                         <strong style="font-size: 16px; display: block; line-height: 0.9;">18 000</strong>
+                                         <span style="font-size: 10px; display: block;">zufriedene Kunden</span>
+                                     </div>
+                                </div>
+                                
+                                <!-- Shipping Banner -->
+                                <div style="display: flex; height: 42px; align-items: center;">
+                                     <div style="background: #004b8d; color: white; padding: 0 15px; height: 100%; display: flex; align-items: center; font-size: 13px; font-weight: bold; font-family: 'Open Sans', sans-serif; text-transform: uppercase;">
+                                         <i class="fa fa-truck" style="margin-right: 8px; font-size: 16px;"></i> VERSAND IN EU
+                                     </div>
+                                     <div style="background: #e31e24; color: white; padding: 0 15px; height: 100%; display: flex; align-items: center; font-size: 14px; font-weight: bold; font-family: 'Open Sans', sans-serif; text-transform: uppercase;">
+                                         NUR 10€
+                                     </div>
+                                </div>
                             </div>
-                            <!-- /.bt-language -->
-                            {{-- <div class="bt-currency">
-                                <form method="post" enctype="multipart/form-data" class="currency">
-                                    <div class="btn-group">
-                                        <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                                            <strong>$</strong> <span>USD</span> <i class="fa fa-angle-down"></i>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <button class="currency-select btn btn-link" type="button"
-                                                    name="EUR"><span>Euro</span> <span>€</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="currency-select btn btn-link" type="button"
-                                                    name="GBP"><span>Pound Sterling</span> <span>£</span>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="currency-select btn btn-link" type="button"
-                                                    name="USD"><span>US Dollar</span> <span>$</span>
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <input type="hidden" name="code" value="" />
-                                    <input type="hidden" name="redirect" value="" />
-                                </form>
-                            </div> --}}
-                            <!-- /.bt-currency -->
-                            <ul class="list-inline">
-                                <li><a href="{{route('home.viewWishlist')}}" id="wishlist-total"
-                                        title="Wish List (0)"><span><i class="fa fa-heart"></i> WUNSCHLISTE (
-                                            @if (Auth::check())
-                                            @php
-                                            $count=App\Wishlist::where('user_id',Auth::user()->id)->count();
-                                            echo $count;
-                                            @endphp
-                                            @else
-                                            0
-                                            @endif
-                                            )</span></a>
-                                </li>
-                                @if(Auth::check())
-                                <li class="dropdown "><a href="#" title="My Account" class="dropdown-toggle"
-                                        data-toggle="dropdown"><span><i
-                                                class="fa fa-user"></i>{{Auth::user()->name}}</span><i
-                                            class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="{{route('client.user.address.list')}}"><span>Adressbuch</span><span><i
-                                                        class="fa fa-unlock-alt"></i></span></a>
-                                        </li>
-                                        <li><a href="{{route('logout')}}"><span>Ausloggen</span><span><i
-                                                        class="fa fa-user"></i></span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                @else
-                                <li class="dropdown display-none-account"><a href="#" title="My Account"
-                                        class="dropdown-toggle" data-toggle="dropdown"><span><i
-                                                class="fa fa-user"></i>MEIN KONTO</span><i
-                                            class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="{{route('home.signup')}}"><span>Registrieren</span><span><i
-                                                        class="fa fa-unlock-alt"></i></span></a>
-                                        </li>
-                                        <li><a href="{{route('login')}}"><span>Anmeldung</span><span><i
-                                                        class="fa fa-user"></i></span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                @endif
-                            </ul>
+                        </div>
 
-
+                        <!-- Right Links -->
+                        <div class="col-md-3 text-right" style="text-align: right;">
+                            <div style="font-size: 12px; color: #003e6d; font-weight: bold; font-family: 'Open Sans', sans-serif; display: flex; align-items: center; justify-content: flex-end; margin-bottom: 20px;">
+                                <a href="{{route('home.signup')}}" style="color: #004b8d; text-decoration: none;">Register</a> 
+                                <span style="color: #004b8d; margin: 0 5px;">|</span> 
+                                <a href="{{route('login')}}" style="color: #004b8d; text-decoration: none;">Log in</a>
+                                <img src="{{asset('assets/client2/images/flags/de.png')}}" alt="DE" style="height: 12px; margin-left: 10px; border: 1px solid #ccc;">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </nav>
-            <div class="container">
-                <div class="row">
-                    <div class="bt-content-menu" style="float: left; width: 100%; clear: both; height: 1px;"></div>
+            </header>
+
+            <!-- Navigation Bar -->
+            <div class="nav-bar-dark d-none d-md-block" style="background-color: #001e3c; border-bottom: none;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="nav" style="display: flex; align-items: center; padding: 0; margin: 0; list-style: none; width: 100%;">
+                                <li style="border-right: 1px solid rgba(255,255,255,0.1);"><a href="{{route('home.index')}}" style="color: white; font-weight: bold; padding: 12px 25px; text-decoration: none; display: block; font-size: 13px; text-transform: none; font-family: 'Open Sans', sans-serif;">Home</a></li>
+                                <li style="border-right: 1px solid rgba(255,255,255,0.1);"><a href="{{route('product.product-list')}}" style="color: white; font-weight: bold; padding: 12px 25px; text-decoration: none; display: block; font-size: 13px; text-transform: none; font-family: 'Open Sans', sans-serif;">Products</a></li>
+                                <li style="border-right: 1px solid rgba(255,255,255,0.1);"><a href="#" style="color: white; font-weight: bold; padding: 12px 25px; text-decoration: none; display: block; font-size: 13px; text-transform: none; font-family: 'Open Sans', sans-serif;">Gifts</a></li>
+                                <li style="border-right: 1px solid rgba(255,255,255,0.1);"><a href="#" style="color: white; font-weight: bold; padding: 12px 25px; text-decoration: none; display: block; font-size: 13px; text-transform: none; font-family: 'Open Sans', sans-serif;">Reviews</a></li>
+                                <li style="border-right: 1px solid rgba(255,255,255,0.1);"><a href="{{route('home.kamagra-glossary')}}" style="color: white; font-weight: bold; padding: 12px 25px; text-decoration: none; display: block; font-size: 13px; text-transform: none; font-family: 'Open Sans', sans-serif;">Encyclopedia</a></li>
+                                <li style="border-right: 1px solid rgba(255,255,255,0.1);"><a href="#" style="color: white; font-weight: bold; padding: 12px 25px; text-decoration: none; display: block; font-size: 13px; text-transform: none; font-family: 'Open Sans', sans-serif;">Advice</a></li>
+                                <li style="border-right: 1px solid rgba(255,255,255,0.1);"><a href="#" style="color: white; font-weight: bold; padding: 12px 25px; text-decoration: none; display: block; font-size: 13px; text-transform: none; font-family: 'Open Sans', sans-serif;">FAQ</a></li>
+                                <li style="border-right: 1px solid rgba(255,255,255,0.1);"><a href="{{route('home.contact_us')}}" style="color: white; font-weight: bold; padding: 12px 25px; text-decoration: none; display: block; font-size: 13px; text-transform: none; font-family: 'Open Sans', sans-serif;">Contact</a></li>
+                                
+                                <li style="margin-left: auto; display: flex; align-items: center;">
+                                    <a href="{{route('product.show-cart')}}" id="desktop-cart-link" style="color: white; font-weight: normal; padding: 10px 0; text-decoration: none; display: block; font-size: 13px; font-family: 'Open Sans', sans-serif; display: flex; align-items: center;">
+                                        <img src="{{ asset('assets/client2/images/bag-icon.png') }}" onerror="this.src='https://cdn-icons-png.flaticon.com/512/1656/1656850.png';this.style.filter='invert(0.5) sepia(1) saturate(5) hue-rotate(-25deg)';" style="height: 20px; margin-right: 8px;" alt="Cart">
+                                        <span id="desktop-cart-count">
+                                            @if(isset($cart_data['cart_total_quantity']) && $cart_data['cart_total_quantity'] > 0)
+                                                {{$cart_data['cart_total_quantity']}} {{ $cart_data['cart_total_quantity'] == 1 ? 'product' : 'products' }} - €{{$cart_data['cart_total_price']}}
+                                            @else
+                                                No products
+                                            @endif
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -261,21 +214,13 @@ use App\Models\Client\Product;
                     <div class="bt-language">
                         <form method="post" enctype="multipart/form-data" class="language">
                             <div class="btn-group">
-                                <button class="btn btn-link dropdown-toggle" data-toggle="dropdown"> <span><img
-                                            src="{{asset('/assets/client2/images/flags/gb.png')}}" alt="English"
-                                            title="English"></span>
+                                <button class="btn btn-link dropdown-toggle" data-toggle="dropdown"> <span><img src="{{asset('/assets/client2/images/flags/gb.png')}}" alt="English" title="English"></span>
                                     <span>en</span><i class="fa fa-angle-down"></i>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#googtrans(en|de)" class="lang-select" data-lang="de"><span
-                                                class="text-left">German</span><span class="text-right"><img
-                                                    src="{{ asset('assets/client2/images/german-flag.png')}}"
-                                                    alt="German" title="German" /></span></a>
+                                    <li><a href="#googtrans(en|de)" class="lang-select" data-lang="de"><span class="text-left">German</span><span class="text-right"><img src="{{ asset('assets/client2/images/german-flag.png')}}" alt="German" title="German" /></span></a>
                                     </li>
-                                    <li><a href="#googtrans(en|en)" class="lang-select" data-lang="en"><span
-                                                class="text-left">English</span><span class="text-right"><img
-                                                    src="{{ asset('assets/client2/images/flags/gb.png')}}" alt="English"
-                                                    title="English" /></span></a>
+                                    <li><a href="#googtrans(en|en)" class="lang-select" data-lang="en"><span class="text-left">English</span><span class="text-right"><img src="{{ asset('assets/client2/images/flags/gb.png')}}" alt="English" title="English" /></span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -292,13 +237,11 @@ use App\Models\Client\Product;
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <button class="currency-select btn btn-link" type="button"
-                                            name="EUR"><span>Euro</span> <span>€</span>
+                                        <button class="currency-select btn btn-link" type="button" name="EUR"><span>Euro</span> <span>€</span>
                                         </button>
                                     </li>
                                     <li>
-                                        <button class="currency-select btn btn-link" type="button"
-                                            name="GBP"><span>Pound Sterling</span> <span>£</span>
+                                        <button class="currency-select btn btn-link" type="button" name="GBP"><span>Pound Sterling</span> <span>£</span>
                                         </button>
                                     </li>
                                     <li>
@@ -321,10 +264,8 @@ use App\Models\Client\Product;
                         <div class="container">
                             <div class="bt_mainmenu">
                                 <div class="row">
-                                    <div class="nav-heading"> <a class="open-panel"><b>MENU</b><span><i
-                                                    class="fa fa-bars"></i></span></a> </div>
-                                    <nav class="mega-menu"> <a class="close-panel"><i
-                                                class="fa fa-times-circle"></i></a>
+                                    <div class="nav-heading"> <a class="open-panel"><b>MENU</b><span><i class="fa fa-bars"></i></span></a> </div>
+                                    <nav class="mega-menu"> <a class="close-panel"><i class="fa fa-times-circle"></i></a>
                                         <ul class="nav nav-pills">
                                             <li class="parent">
                                                 <a href="{{route('home.index')}}"><span class="menu-title">Home
@@ -333,33 +274,26 @@ use App\Models\Client\Product;
                                             </li>
                                             <li> <a href="{{route('home.user-profile')}}"><span class="menu-title">My
                                                         Account</span></a> </li>
-                                            <li> <a href="{{route('home.partner')}}"><span
-                                                        class="menu-title">partner</span></a>
+                                            <li> <a href="{{route('home.partner')}}"><span class="menu-title">partner</span></a>
                                             </li>
                                             <li> <a href="{{route('home.about_us')}}"><span class="menu-title">About
                                                         us</span></a>
                                             </li>
-                                            <li> <a href="{{route('home.contact_us')}}"><span
-                                                        class="menu-title">Contact</span></a>
+                                            <li> <a href="{{route('home.contact_us')}}"><span class="menu-title">Contact</span></a>
                                             </li>
                                             <li class="parent">
-                                                <p class="plus visible-xs">+</p> <a href="#"><span
-                                                        class="menu-title">Service</span><i
-                                                        class="fa fa-angle-down"></i></a>
+                                                <p class="plus visible-xs">+</p> <a href="#"><span class="menu-title">Service</span><i class="fa fa-angle-down"></i></a>
                                                 <div class="dropdown drop-grid-6-1">
                                                     <div class="menu-row row-col-1">
                                                         <div class="menu-column row-grid-1">
                                                             <!-- <a href="#" class="parent">Personal Care</a> -->
                                                             <ul class="column category">
-                                                                <li class="col-grid-1 "> <a
-                                                                        href="{{route('home.free-shipping')}}">Kostenloser
+                                                                <li class="col-grid-1 "> <a href="{{route('home.free-shipping')}}">Kostenloser
                                                                         Versand</a>
                                                                 </li>
-                                                                <li class="col-grid-1 "> <a
-                                                                        href="{{route('home.satisfaction')}}">100%
+                                                                <li class="col-grid-1 "> <a href="{{route('home.satisfaction')}}">100%
                                                                         Zufriedenheit</a> </li>
-                                                                <li class="col-grid-1 "> <a
-                                                                        href="{{route('home.delivery-information')}}">Informationen
+                                                                <li class="col-grid-1 "> <a href="{{route('home.delivery-information')}}">Informationen
                                                                         zum Versand</a> </li>
                                                             </ul>
                                                         </div>
@@ -367,15 +301,12 @@ use App\Models\Client\Product;
                                                 </div>
                                             </li>
 
-                                            <li> <a href="{{route('home.kamagra-glossary')}}"><span
-                                                        class="menu-title">Kamagra Glossary</span></a>
+                                            <li> <a href="{{route('home.kamagra-glossary')}}"><span class="menu-title">Kamagra Glossary</span></a>
                                             </li>
-                                            <li> <a href="{{route('home.sexual-enhance')}}"><span
-                                                        class="menu-title">Potenzmittel</span></a>
+                                            <li> <a href="{{route('home.sexual-enhance')}}"><span class="menu-title">Potenzmittel</span></a>
                                             </li>
 
-                                            <li> <a href="{{route('home.blog')}}"><span
-                                                        class="menu-title">bloggen</span></a>
+                                            <li> <a href="{{route('home.blog')}}"><span class="menu-title">bloggen</span></a>
                                             </li>
 
 
@@ -405,7 +336,7 @@ use App\Models\Client\Product;
                                         alt="OnlineKamagraStore" style="
                                     width: 80px;
                                 "> -->
-                                    <p>Medicine Company</p>
+                                    <p>kamagrakaufenstore</p>
 
                                 </a>
                             </div>
@@ -414,9 +345,7 @@ use App\Models\Client\Product;
 
                         <div class="col-xs-3  col-sm-4 cart-column text-end-carts">
                             <div id="cart" class="btn-group btn-block cart-icons header-cartbtn ">
-                                <button type="button" data-toggle="dropdown" data-loading-text="Loading..."
-                                    class="btn btn-inverse btn-block btn-lg dropdown-toggle cart-mobile-view"><i
-                                        class="fa fa-shopping-cart"></i>
+                                <button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="btn btn-inverse btn-block btn-lg dropdown-toggle cart-mobile-view"><i class="fa fa-shopping-cart"></i>
                                     <span id="cart-total" class="cart-total">
                                         {{$cart_data['cart_total_quantity']}} Artikel -
                                         €{{$cart_data['cart_total_price']}}</span>
@@ -433,15 +362,10 @@ use App\Models\Client\Product;
                                             <tr>
                                                 <td class="text-left image">
                                                     <div class="image">
-                                                        <a href="product-detail.php"><img
-                                                                src="{{asset('/assets/images/product/').'/'.$prod_data->image}}"
-                                                                alt="{{$prod_data->name}}" title="{{$prod_data->name}}"
-                                                                class="img-thumbnail" />
+                                                        <a href="product-detail.php"><img src="{{asset('/assets/images/product/').'/'.$prod_data->image}}" alt="{{$prod_data->name}}" title="{{$prod_data->name}}" class="img-thumbnail" />
                                                         </a>
-                                                        <div class="remove delete-product"
-                                                            data-product="{{$item['id']}}">
-                                                            <button type="button" title="Remove" class="btn-danger"><i
-                                                                    class="fa fa-times"></i>
+                                                        <div class="remove delete-product" data-product="{{$item['id']}}">
+                                                            <button type="button" title="Remove" class="btn-danger"><i class="fa fa-times"></i>
                                                             </button>
                                                         </div>
                                                     </div>
@@ -449,8 +373,7 @@ use App\Models\Client\Product;
                                                 <td class="text-left name">
                                                     <a href="product-detail.php">{{$prod_data->name}}</a>
                                                     {{-- <br /> - <small>Color Pink</small> --}}
-                                                    <div class="color-red">{{$item['quantity']}} x <span
-                                                            class="price color-red">€{{$item['price']}}</span>
+                                                    <div class="color-red">{{$item['quantity']}} x <span class="price color-red">€{{$item['price']}}</span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -475,10 +398,8 @@ use App\Models\Client\Product;
                                                 </tr>
                                             </table>
                                             <div class="buttons">
-                                                <span class="cart_bt"><a href="{{route('product.show-cart')}}"
-                                                        class="btn">Warenkorb ansehen</a></span>
-                                                <span class="checkout_bt"><a class="btn btn-shopping"
-                                                        href="{{route('home.checkout_form')}}">Kasse</a></span>
+                                                <span class="cart_bt"><a href="{{route('product.show-cart')}}" class="btn">Warenkorb ansehen</a></span>
+                                                <span class="checkout_bt"><a class="btn btn-shopping" href="{{route('home.checkout_form')}}">Kasse</a></span>
                                             </div>
                                         </div>
                                     </li>
@@ -506,393 +427,141 @@ use App\Models\Client\Product;
 
             </header>
             <!-- /.bt-mobile -->
-            <header class="d-none d-md-block">
-                <div class="container">
-                    <div class="row d-flex align-items-center mob-header-rowdblock">
-                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4">
-                            <div id="logo " class="desktop-logo">
-                                <a href="{{route('home.index')}}">
-                                    <!-- <img src="images/logo.png" title="Drug Store" alt="Drug Store" class="img-responsive" /> -->
-                                    <!-- <img src="{{asset('/assets/client2/images/new-latest-logo.png')}}"
-                                        alt="OnlineKamagraStore" style="
-                                    width: 80px;
-                                ">       -->
-                                   Medicine Company
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6">
-                            <div id="boss-search" class="fourteen columns omega">
-                                <div class="choose-select">
-                                    {{-- <div class="input_cat">
-                                        <select name="filter_category_id" id="boss_filter_search">
-                                            <option value="0" selected="selected">All Categories</option>
-                                            <option value="34">Medicine &amp; Health</option>
-                                            <option value="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Personal Care
-                                            </option>
-                                            <option value="57">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                hair regrowth</option>
-                                            <option value="26">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ear
-                                                care</option>
-                                            <option value="17">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foot
-                                                care</option>
-                                            <option value="18">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oral
-                                                care</option>
-                                            <option value="33">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sun
-                                                care</option>
-                                            <option value="59">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;medicine</option>
-                                            <option value="51">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allergy
-                                                &amp; sinus</option>
-                                            <option value="52">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eye
-                                                care</option>
-                                            <option value="53">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first
-                                                aid</option>
-                                            <option value="50">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pharmacy
-                                            </option>
-                                            <option value="54">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sleep
-                                                &amp; snoring aids</option>
-                                            <option value="27">household</option>
-                                            <option value="42">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; appliances</option>
-                                            <option value="60">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;electronics</option>
-                                            <option value="25">Beauty</option>
-                                            <option value="46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bath &amp; spa
-                                            </option>
-                                            <option value="29">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cosmetics</option>
-                                            <option value="66">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fragrance
-                                            </option>
-                                            <option value="67">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hair
-                                                care</option>
-                                            <option value="68">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;skin
-                                                care</option>
-                                            <option value="28">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Diet &amp; Fitness
-                                            </option>
-                                            <option value="65">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nutritional
-                                                bars</option>
-                                            <option value="64">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sports
-                                                nutrition</option>
-                                            <option value="63">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;weight
-                                                loss</option>
-                                            <option value="62">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yoga
-                                                &amp; pilates</option>
-                                            <option value="32">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;international beauty
-                                            </option>
-                                            <option value="45">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;natural &amp; organic
-                                            </option>
-                                            <option value="69">Baby Needs</option>
-                                            <option value="71">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Children's Healthcare
-                                            </option>
-                                            <option value="70">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vitamins</option>
-                                            <option value="24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; natural baby
-                                            </option>
-                                            <option value="72">Women's</option>
-                                            <option value="31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;feminine care
-                                            </option>
-                                            <option value="73">Vaccines</option>
-                                        </select>
-                                    </div> --}}
-                                    <div class="search-form">
-                                        <form action="{{route('product.product-list-filter')}}" method="get">
-                                            <div id="search" class="input-group">
-                                                <input type="text" name="search" value="" placeholder="Suche hier..."
-                                                    class="form-control input-lg" />
-                                                <span class="input-group-btn">
-                                                    <button type="submit" class="btn btn-default btn-lg"><i
-                                                            class="fa fa-search"></i></button>
-                                                </span>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 cart-column">
-                            <div id="cart"
-                                class="btn-group btn-block cart-icons header-cartbtn <?php if($cart_data['cart_total_price']>0){echo 'product-found';} ?>">
-                                <button type="button" data-toggle="dropdown" data-loading-text="Loading..."
-                                    class="btn btn-inverse btn-block btn-lg dropdown-toggle cart-mobile-view"><i
-                                        class="fa fa-shopping-cart "></i> <span id="cart-total"
-                                        class="cart-total">{{$cart_data['cart_total_quantity']}} Artikel -
-                                        €{{$cart_data['cart_total_price']}}</span>
-                                </button>
-                                <ul class="dropdown-menu pull-right">
-                                    @if (isset($cart_data['cart_product_list']) &&
-                                    !empty($cart_data['cart_product_list']))
-                                    @foreach ($cart_data['cart_product_list'] as $item)
-                                    @php
-                                    $prod_data=Product::where('id',$item['product_id'])->first();
-                                    @endphp
-                                    <li>
-                                        <table class="table table-striped">
-                                            <tr>
-                                                <td class="text-left image">
-                                                    <div class="image">
-                                                        <a href="product-detail.php"><img
-                                                                src="{{asset('/assets/images/product/').'/'.$prod_data->image}}"
-                                                                alt="{{$prod_data->name}}" title="{{$prod_data->name}}"
-                                                                class="img-thumbnail" />
-                                                        </a>
-                                                        <div class="remove delete-product"
-                                                            data-product="{{$item['id']}}">
-                                                            <button type="button" title="Remove" class="btn-danger "><i
-                                                                    class="fa fa-times"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-left name">
-                                                    <a href="product-detail.php">{{$prod_data->name}}</a>
-                                                    {{-- <br /> - <small>Color Pink</small> --}}
-                                                    <div class="color-red">{{$item['quantity']}} x <span
-                                                            class="price color-red">€{{$item['price']}}</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </li>
-                                    @endforeach
-                                    <li>
-                                        <div class="cart_bottom">
-                                            <table class="minicart_total">
-                                                <tr>
-                                                    <td class="text-left"><span class="color-red">Zwischensumme</span>
-                                                    </td>
-                                                    <td class="text-right color-red">€{{$cart_data['cart_total_price']}}
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-left"><span class="color-red">Gesamt</span>
-                                                    </td>
-                                                    <td class="text-right color-red">€{{$cart_data['cart_total_price']}}
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <div class="buttons">
-                                                <span class="cart_bt"><a href="{{route('product.show-cart')}}"
-                                                        class="btn">Warenkorb ansehen</a></span>
-                                                <span class="checkout_bt"><a class="btn btn-shopping"
-                                                        href="{{route('home.checkout_form')}}">Kasse</a></span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    @else
-                                    Einkaufswagen ist leer!
-                                    @endif
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- /#cart -->
-
-                    <!-- /#boss-search -->
-                </div>
-
-            </header>
-            <div class="boss-new-position">
-                <div class="boss_header header-bggreen">
-                    <div class="container">
-                        <div class="row">
-                            <div class="menu">
-                                <!-- Load menu -->
-                                <div class="menubar">
-                                    <div class="container">
-                                        <div class="bt_mainmenu">
-                                            <div class="row">
-                                                <div class="nav-heading"> <a class="open-panel"><b>MENU</b><span><i
-                                                                class="fa fa-bars"></i></span></a> </div>
-                                                <nav class="mega-menu menuhover-white"> <a class="close-panel"><i
-                                                            class="fa fa-times-circle"></i></a>
-                                                    <ul class="nav nav-pills">
-                                                        <li class="parent">
-                                                            <a href="{{route('home.index')}}"><span
-                                                                    class="menu-title">Startseite</span></a>
-
-                                                        </li>
-                                                        <li> <a href="{{route('home.user-profile')}}"><span
-                                                                    class="menu-title">Mein Konto</span></a>
-                                                        </li>
-                                                        <li> <a href="{{route('home.partner')}}"><span
-                                                                    class="menu-title">Partner</span></a>
-                                                        </li>
-                                                        <li> <a href="{{route('home.about_us')}}"><span
-                                                                    class="menu-title">Über uns</span></a>
-                                                        </li>
-                                                        <li> <a href="{{route('home.contact_us')}}"><span
-                                                                    class="menu-title">Kontakt</span></a>
-                                                        </li>
-                                                        <li class="parent">
-                                                            <p class="plus visible-xs">+</p> <a href="#"><span
-                                                                    class="menu-title">Service</span><i
-                                                                    class="fa fa-angle-down"></i></a>
-                                                            <div class="dropdown drop-grid-6-1">
-                                                                <div class="menu-row row-col-1">
-                                                                    <div class="menu-column row-grid-1">
-                                                                        <!-- <a href="#" class="parent">Personal Care</a> -->
-                                                                        <ul class="column category">
-                                                                            <li class="col-grid-1 "> <a
-                                                                                    href="{{route('home.free-shipping')}}">Kostenloser
-                                                                                    Versand</a>
-                                                                            </li>
-                                                                            <li class="col-grid-1 "> <a
-                                                                                    href="{{route('home.satisfaction')}}">100%
-                                                                                    Zufriedenheit</a> </li>
-                                                                            <li class="col-grid-1 "> <a
-                                                                                    href="{{route('home.delivery-information')}}">Informationen
-                                                                                    zum Versand</a> </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-
-                                                        <li> <a href="{{route('home.kamagra-glossary')}}"><span
-                                                                    class="menu-title">Kamagra Glossary</span></a>
-                                                        </li>
-                                                        <li> <a href="{{route('home.sexual-enhance')}}"><span
-                                                                    class="menu-title">Potenzmittel</span></a>
-                                                        </li>
-                                                        <li> <a href="{{route('home.blog')}}"><span
-                                                                    class="menu-title">bloggen</span></a>
-                                                        </li>
-
-
-                                                        {{-- <li> <a href="#"><span
-                                                                    class="menu-title">Kamagra-Glossar</span></a>
-                                                        </li>
-                                                        <li> <a href="#"><span
-                                                                    class="menu-title">Potenzmittel</span></a>
-                                                        </li>
-                                                        <li> <a href="#"><span class="menu-title">Blog</span></a> </li> --}}
-                                                    </ul>
-                                                </nav>
-                                                <!-- /.mega-menu -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /.menubar -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.boss_header -->
 
 
 
 
 
+
+
+
+
+
+
+
+            </div><!-- End bt_header -->
+
+            <div id="bt_container" class="bt-wide " style="padding-bottom: 40px; min-height: 600px;">
                 @yield('content')
+            </div>
 
+            <div id="bt_footer" style="background: #eaf8ff; border-top: 1px solid #ddd; padding: 40px 0;">
 
+                <footer>
+                    <!-- New Footer Design matching Screenshot -->
+                    <div class="footer-new" style="background: #eaf8ff; border-top: 1px solid #ddd; padding: 30px 0; margin-top: 20px;">
+                        <div class="container">
+                            <div class="row" style="display: flex; align-items: center; flex-wrap: wrap;">
+                                <!-- Logo Left -->
+                                <div class="col-md-3 col-sm-12" style="text-align: left; padding-bottom: 20px;">
+                                     <a href="{{route('home.index')}}">
+                                         <img src="https://www.kamagraoriginal.to/images/logo.png?v=10" alt="Kamagra Original" style="max-height: 40px;">
+                                     </a>
+                                </div>
+                                <!-- Links Center/Right -->
+                                <div class="col-md-9 col-sm-12" style="text-align: right;">
+                                    
+                                    <!-- Row 1 -->
+                                    <div style="margin-bottom: 8px;">
+                                        <a href="{{route('home.index')}}" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">Home</a>
+                                        <span style="color: #ccc; margin: 0 8px;">|</span>
+                                        <a href="{{route('product.product-list')}}" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">Products</a>
+                                        <span style="color: #ccc; margin: 0 8px;">|</span>
+                                        <a href="#" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">Gifts</a>
+                                        <span style="color: #ccc; margin: 0 8px;">|</span>
+                                        <a href="#" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">Reviews</a>
+                                        <span style="color: #ccc; margin: 0 8px;">|</span>
+                                        <a href="{{route('home.kamagra-glossary')}}" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">Encyclopedia</a>
+                                        <span style="color: #ccc; margin: 0 8px;">|</span>
+                                        <a href="#" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">Advice</a>
+                                        <span style="color: #ccc; margin: 0 8px;">|</span>
+                                        <a href="#" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">FAQ</a>
+                                        <span style="color: #ccc; margin: 0 8px;">|</span>
+                                        <a href="{{route('home.contact_us')}}" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">Contact</a>
+                                    </div>
 
-                <div id="bt_footer" class="">
-                    <footer>
-                        <div class="bt-footer-middle">
-                            <div class="container">
-                                <div class="row footer-row-mobile">
-                                    <div class="col-md-12">
-                                        <div id="logo " class="desktop-logo">
-                                            <a href="{{route('home.index')}}">
-                                                <!-- <img src="images/logo.png" title="Drug Store" alt="Drug Store" class="img-responsive" /> -->
-                                                <!--<span>OKS</span> -->
-                                                <!-- <img src="{{asset('/assets/client2/images/new-latest-logo.png')}}"
-                                                    alt="OnlineKamagraStore" style="width: 80px;"> -->
-                                               Medicine Company
-                                            </a>
+                                    <!-- Row 2 -->
+                                    <div style="margin-bottom: 8px;">
+                                        <a href="#" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">GDPR</a>
+                                        <span style="color: #ccc; margin: 0 8px;">|</span>
+                                        <a href="#" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">Terms and Conditions</a>
+                                        <span style="color: #ccc; margin: 0 8px;">|</span>
+                                        <a href="#" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">Payment</a>
+                                        <span style="color: #ccc; margin: 0 8px;">|</span>
+                                        <a href="#" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">Exchanges & Returns</a>
+                                    </div>
+
+                                    <!-- Row 3 -->
+                                    <div>
+                                        <a href="#" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">Discreet handling</a>
+                                        <span style="color: #ccc; margin: 0 8px;">|</span>
+                                        <a href="#" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">Shipping & Delivery</a>
+                                        <span style="color: #ccc; margin: 0 8px;">|</span>
+                                        <a href="#" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">Legal Notice</a>
+                                        <span style="color: #ccc; margin: 0 8px;">|</span>
+                                        <a href="#" style="color: #003e6d; font-weight: bold; font-size: 13px; text-decoration: none;">Information</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Copyright Section -->
+                    <div style="background: #f8f8f8; padding: 20px 0; border-top: 1px solid #eee;">
+                         <div class="container text-center">
+                             <p style="margin: 0; font-size: 12px; color: #999;">2025 © SMART LOGISTIK kft., Hegedus Gyula utca 13, 1136 Budapest, Hungary, All rights reserved</p>
+                         </div>
+                    </div>
+
+                    <!-- Old Footer Commented Out as requested -->
+                    <!-- 
+                    <div class="bt-footer-middle" style="display: none;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4 col-xs-12 col-lg-6"> 
+                                    <div class="footer-block">
+                                        <div class="box-content">
+                                            <ul class="list-unstyled">
+                                                <li> <a href="{{route('home.index')}}"><span class="menu-title">Home</span></a>
+                                                </li>
+                                                <li> <a href="{{route('product.product-list')}}"><span class="menu-title">Produkte</span></a>
+                                                </li>
+                                                <li> <a href="{{route('home.kamagra-glossary')}}"><span class="menu-title">Enzyklopädie</span></a>
+                                                </li>
+                                                <li> <a href="{{route('home.contact_us')}}"><span class="menu-title">Kontakt</span></a>
+                                                </li>
+                                                <li> <a href="{{route('home.sexual-enhance')}}"><span class="menu-title">Potenzmittel</span></a>
+                                                </li>
+                                                <li> <a href="{{route('home.blog')}}"><span class="menu-title">bloggen</span></a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="col-sm-4 col-xs-12 col-lg-3">
-                                            <!--Load modules in position footer middle-->
-                                            <div class="bt-contact-me">
-                                                <div class="box-heading">
-                                                    <h3>SCHNELLER KONTAKT</h3>
-                                                </div>
-                                                <div class="box-content">
-                                                    <form id="quick_contact" method="post"
-                                                        action="{{route('home.save_contactus')}}" class="frm_contact">
-                                                        @csrf
-                                                        <div class="input-name">
-                                                            <input class="form-control " size="25" type="text" value=""
-                                                                placeholder="Dein Name" name="contact_name"
-                                                                id="contact_name"
-                                                                onfocus="if(this.value==this.defaultValue)this.value=''"
-                                                                onblur="if(this.value=='')this.value=this.defaultValue"
-                                                                required />
-                                                        </div>
-                                                        <div class="input-email">
-                                                            <input class="form-control" size="25" type="text" value=""
-                                                                placeholder="Deine E-Mail" name="contact_mail"
-                                                                id="contact_mail"
-                                                                onfocus="if(this.value==this.defaultValue)this.value=''"
-                                                                onblur="if(this.value=='')this.value=this.defaultValue"
-                                                                required>
-                                                        </div>
-                                                        <div class="input-message">
-                                                            <textarea class="form-control" name="contact_msg"
-                                                                placeholder="Deine Nachricht"
-                                                                onfocus="if(this.value==this.defaultValue)this.value=''"
-                                                                onblur="if(this.value=='')this.value=this.defaultValue"
-                                                                required></textarea>
-                                                        </div>
-                                                        <button type="submit" class="btn btn-primary"
-                                                            id="b_button_contact"
-                                                            style="border-color: #2696B8!important;    background: #2696B8!important;">Senden</button>
-                                                        <div id="contact_result"></div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div><!-- /.col-sm-4 -->
-                                        <div class="col-sm-4 col-xs-12 col-lg-3">
-                                            <!--Load modules in position footer middle-->
-                                            <div class="bt-contact-me">
-                                                <div class="box-heading">
-                                                    <h3>schnelle Links</h3>
-                                                </div>
-                                                <div class="box-content footer-quicklinks">
-                                                    <ul>
-                                                        <li class="parent">
-                                                            <a href="{{route('home.index')}}"><span
-                                                                    class="menu-title">Startseite</span></a>
-
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-12 col-lg-3">
+                                    <div class="bt-newsletter">
+                                        
+                                    </div>
+                                </div>
+                                <div class="footer-email col-xs-12 col-lg-3">
+                                    <h3>SCHREIBEN SIE UNS EINE E-MAIL</h3>
+                                    <p>
+                                        <a href="mailto:support@onlinekamagrastore.com" class="w-100">support@onlinekamagrastore.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="bt-footer-bottom bggreen-footer" style="display: none;">
+                   </div> 
+                   -->
+                </footer>
+            </div>
                                                         </li>
-                                                        <li> <a href="{{route('home.user-profile')}}"><span
-                                                                    class="menu-title">Mein Konto</span></a>
+                                                        <li> <a href="{{route('home.sexual-enhance')}}"><span class="menu-title">Potenzmittel</span></a>
                                                         </li>
-                                                        <li> <a href="{{route('home.partner')}}"><span
-                                                                    class="menu-title">Partner</span></a>
-                                                        </li>
-                                                        <li> <a href="{{route('home.about_us')}}"><span
-                                                                    class="menu-title">Über uns</span></a>
-                                                        </li>
-                                                        <li> <a href="{{route('home.contact_us')}}"><span
-                                                                    class="menu-title">Kontakt</span></a>
-                                                        </li>
-                                                        <li> <a href="{{route('home.kamagra-glossary')}}"><span
-                                                                    class="menu-title">Kamagra Glossary</span></a>
-                                                        </li>
-                                                        <li> <a href="{{route('home.sexual-enhance')}}"><span
-                                                                    class="menu-title">Potenzmittel</span></a>
-                                                        </li>
-                                                        <li> <a href="{{route('home.blog')}}"><span
-                                                                    class="menu-title">bloggen</span></a>
+                                                        <li> <a href="{{route('home.blog')}}"><span class="menu-title">bloggen</span></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -911,9 +580,7 @@ use App\Models\Client\Product;
                                                     <div>
                                                         <div class="newsletter-content">
                                                             <div id="frm_subscribe">
-                                                                <form action="{{route('home.save_newsletter')}}"
-                                                                    method="POST" enctype="multipart/form-data"
-                                                                    id="newslettter_form">
+                                                                <form action="{{route('home.save_newsletter')}}" method="POST" enctype="multipart/form-data" id="newslettter_form">
                                                                     @csrf
                                                                     <table>
                                                                         <tr>
@@ -921,17 +588,8 @@ use App\Models\Client\Product;
                                                                                 <div class="boss-newsletter">
                                                                                     {{-- <form > --}}
 
-                                                                                    <input
-                                                                                        class="form-control input-new"
-                                                                                        size="50" type="text"
-                                                                                        placeholder="Geben Sie hier Ihre E-Mail-Adresse ein"
-                                                                                        name="subscribe_email"
-                                                                                        id="subscribe_email"
-                                                                                        style="border-color: #2696B8!important;">
-                                                                                    <button class="btn btn-new"
-                                                                                        type="submit"
-                                                                                        style="border-color: #2696B8!important;    background: #2696B8!important;"><i
-                                                                                            class="fa fa-paper-plane"></i></button>
+                                                                                    <input class="form-control input-new" size="50" type="text" placeholder="Geben Sie hier Ihre E-Mail-Adresse ein" name="subscribe_email" id="subscribe_email" style="border-color: #7F447A!important;">
+                                                                                    <button class="btn btn-new" type="submit" style="border-color: #7F447A!important;    background: #7F447A!important;"><i class="fa fa-paper-plane"></i></button>
                                                                                     {{-- </form> --}}
                                                                                 </div>
                                                                             </td>
@@ -981,7 +639,8 @@ use App\Models\Client\Product;
                                             <p>
                                                 <a href="mailto:support@onlinekamagrastore.com" class="w-100">support@onlinekamagrastore.com</a>
                                             </p>
-                                            <a href="//www.dmca.com/Protection/Status.aspx?ID=58f44135-ceda-40d3-95bd-8c84e1d8798a" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/DMCA_badge_grn_60w.png?ID=58f44135-ceda-40d3-95bd-8c84e1d8798a"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+                                            <a href="//www.dmca.com/Protection/Status.aspx?ID=58f44135-ceda-40d3-95bd-8c84e1d8798a" title="DMCA.com Protection Status" class="dmca-badge"> <img src="https://images.dmca.com/Badges/DMCA_badge_grn_60w.png?ID=58f44135-ceda-40d3-95bd-8c84e1d8798a" alt="DMCA.com Protection Status" /></a>
+                                            <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
                                         </div>
                                     </div>
                                 </div>
@@ -1004,7 +663,8 @@ use App\Models\Client\Product;
                                         <div class="row">
                                             <div class="powered col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                 <div id="powered">
-                                                    <p>© {{date('Y')}} OnlineKamagraStore Copyright.
+                                                    <p>© {{date('Y')}}kamagra kaufen store.
+                                                    .
                                                     </p>
                                                 </div>
                                             </div>
@@ -1016,30 +676,23 @@ use App\Models\Client\Product;
                                                     </a>
                                                     </li>
                                                     <li>
-                                                        <a title="MasterCard" href="#" class="masterCard"><img
-                                                                alt="MasterCard"
-                                                                src="{{asset('/assets/client2/images/master_card.jpg')}}" />
+                                                        <a title="MasterCard" href="#" class="masterCard"><img alt="MasterCard" src="{{asset('/assets/client2/images/master_card.jpg')}}" />
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a title="Paypal" href="#" class="paypal"><img alt="Paypal"
-                                                                src="{{asset('/assets/client2/images/paypal.jpg')}}">
+                                                        <a title="Paypal" href="#" class="paypal"><img alt="Paypal" src="{{asset('/assets/client2/images/paypal.jpg')}}">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a title="Merican" href="#" class="merican"><img alt="Merican"
-                                                                src="{{asset('/assets/client2/images/american.jpg')}}" />
+                                                        <a title="Merican" href="#" class="merican"><img alt="Merican" src="{{asset('/assets/client2/images/american.jpg')}}" />
                                                         </a>
                                                     </li> --}}
                                                     <li>
-                                                        <a title="DHL" href="#" class="dhl"><img alt="DHL"
-                                                                src="{{asset('/assets/client2/images/dhl.jpg')}}">
+                                                        <a title="DHL" href="#" class="dhl"><img alt="DHL" src="{{asset('/assets/client2/images/dhl.jpg')}}">
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a title="DHL" href="#" class="dhl"><img alt="DHL"
-                                                                src="{{asset('/assets/client2/images/bank_transfer.jpg')}}"
-                                                                style="
+                                                        <a title="DHL" href="#" class="dhl"><img alt="DHL" src="{{asset('/assets/client2/images/bank_transfer.jpg')}}" style="
                                                                 width: 38px;
                                                                 object-fit: contain;
                                                             ">
@@ -1077,995 +730,667 @@ use App\Models\Client\Product;
         <script src="{{ asset('assets/client2/js/custom.js') }}"></script>
         <script src="{{ asset('assets/client2/js/jquery.fancybox.js') }}"></script>
         <!--Start of Tawk.to Script-->
-        <script type="text/javascript">
-        var Tawk_API = Tawk_API || {},
-            Tawk_LoadStart = new Date();
-        (function() {
-            var s1 = document.createElement("script"),
-                s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/620640439bd1f31184dc1f3f/1frk6m2u8';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-        </script>
+        <!-- <script type="text/javascript">
+            var Tawk_API = Tawk_API || {},
+                Tawk_LoadStart = new Date();
+            (function() {
+                var s1 = document.createElement("script"),
+                    s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/620640439bd1f31184dc1f3f/1frk6m2u8';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script> -->
         <!--End of Tawk.to Script-->
         @yield('scripts')
         @if(session()->has('msg'))
         <script>
-        alert('{{ session()->get("msg") }}')
+            alert('{{ session()->get("msg") }}')
         </script>
         @endif
         @if(Auth::check())
         <script>
-        $(document).on('click', '.add-to-wishlist', function() {
-            var product = $(this).data('product');
-            $.ajax({
-                url: "{{ route('home.addToWishlist') }}",
-                type: "POST",
-                data: {
-                    id: product,
-                    _token: "{{ csrf_token() }}"
-                },
-                success: function(res) {
-                    if (res == '1') {
-                        alert("Product Added to wishlist")
-                        window.location.reload();
+            $(document).on('click', '.add-to-wishlist', function() {
+                var product = $(this).data('product');
+                $.ajax({
+                    url: "{{ route('home.addToWishlist') }}",
+                    type: "POST",
+                    data: {
+                        id: product,
+                        _token: "{{ csrf_token() }}"
+                    },
+                    success: function(res) {
+                        if (res == '1') {
+                            alert("Product Added to wishlist")
+                            window.location.reload();
+                        }
+                        if (res == '2') {
+                            alert("Something went wrong")
+                        }
                     }
-                    if (res == '2') {
-                        alert("Something went wrong")
-                    }
-                }
 
+                });
             });
-        });
         </script>
         @else
         <script>
-        $(document).on('click', '.add-to-wishlist', function() {
-            alert("Please Login");
-        });
+            $(document).on('click', '.add-to-wishlist', function() {
+                alert("Please Login");
+            });
         </script>
         @endif
 
         @if(Auth::check())
         <script>
-        $(document).on('click', '.remove-from-wishlist', function() {
-            var product = $(this).data('product');
-            $.ajax({
-                url: "{{ route('home.removeFromWishlist') }}",
-                type: "POST",
-                data: {
-                    id: product,
-                    _token: "{{ csrf_token() }}"
-                },
-                success: function(res) {
-                    if (res == '1') {
-                        alert("Product Removed from wishlist")
-                        window.location.reload();
+            $(document).on('click', '.remove-from-wishlist', function() {
+                var product = $(this).data('product');
+                $.ajax({
+                    url: "{{ route('home.removeFromWishlist') }}",
+                    type: "POST",
+                    data: {
+                        id: product,
+                        _token: "{{ csrf_token() }}"
+                    },
+                    success: function(res) {
+                        if (res == '1') {
+                            alert("Product Removed from wishlist")
+                            window.location.reload();
+                        }
+                        if (res == '2') {
+                            alert("Something went wrong")
+                        }
                     }
-                    if (res == '2') {
-                        alert("Something went wrong")
-                    }
-                }
 
+                });
             });
-        });
         </script>
         @endif
         <script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'de',
-                layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT
-            }, 'google_translate_element');
-        }
-
-        function triggerHtmlEvent(element, eventName) {
-            var event;
-            if (document.createEvent) {
-                event = document.createEvent('HTMLEvents');
-                event.initEvent(eventName, true, true);
-                element.dispatchEvent(event);
-            } else {
-                event = document.createEventObject();
-                event.eventType = eventName;
-                element.fireEvent('on' + event.eventType, event);
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'de',
+                    layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT
+                }, 'google_translate_element');
             }
-        }
-        $(document).ready(function() {
-            $('.delete-product').on('click', function() {
-                var product = $(this).data('product');
-                $.ajax({
-                    url: "{{ route('product.delete-from-cart') }}",
-                    type: "POST",
-                    data: {
-                        product: product,
-                        _token: "{{ csrf_token() }}"
-                    },
-                    success: function(data) {
-                        window.location.reload();
-                    },
-                    error: function(data) {
-                        window.location.reload();
-                    }
-                });
-            });
-            // alert($('.goog-te-combo').val());
-            $('.lang-select').click(function() {
-                var theLang = $(this).attr('data-lang');
-                $('.goog-te-combo').val(theLang);
 
-                window.location = $(this).attr('href');
-                location.reload();
-
-            });
-        });
-        </script>
-        <script type="text/javascript"
-            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-        <script>
-        $(document).ready(function() {
-
-            $("#quick_contact").validate({
-                ignore: [],
-                rules: {
-
-                    contact_name: {
-                        required: true,
-                    },
-                    contact_mail: {
-                        required: true,
-                    },
-                    contact_msg: {
-                        required: true,
-                    },
-
-                },
-                messages: {
-
-
-                }
-            });
-            $.validator.addMethod("pwcheck",
-                function(value, element) {
-                    return /^[A-Za-z0-9]+$/.test(value);
-                });
-            $("#newslettter_form").validate({
-                ignore: [],
-                rules: {
-                    subscribe_email: {
-                        required: true,
-                    },
-                },
-                messages: {}
-            });
-            $.validator.addMethod("pwcheck",
-                function(value, element) {
-                    return /^[A-Za-z0-9]+$/.test(value);
-                });
-        });
-        </script>
-        <script>
-        jQuery(document).ready(function() {
-            /* bosszoomtoolbox */
-            $.fn.CloudZoom.defaults = {
-                adjustX: 0,
-                adjustY: 0,
-                tint: '#FFF',
-                tintOpacity: 0.5,
-                softFocus: 0,
-                lensOpacity: 0.7,
-                zoomWidth: '450',
-                zoomHeight: '512',
-                position: 'inside',
-                showTitle: 0,
-                titleOpacity: 0.5,
-                smoothMove: '3'
-            };
-            $('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
-
-            //pass the images to Fancybox           
-            var gallerylist = [];
-            gallerylist.push({
-                href: "images/product/p21-600x683.jpg",
-                title: "Cashmere cuff vintage Levi maxi"
-            });
-            gallerylist.push({
-                href: "images/product/p18-600x683.jpg",
-                title: "Cashmere cuff vintage Levi maxi"
-            });
-            gallerylist.push({
-                href: "images/product/p1-600x683.jpg",
-                title: "Cashmere cuff vintage Levi maxi"
-            });
-            gallerylist.push({
-                href: "images/product/p16-600x683.jpg",
-                title: "Cashmere cuff vintage Levi maxi"
-            });
-            gallerylist.push({
-                href: "images/product/p11-600x683.jpg",
-                title: "Cashmere cuff vintage Levi maxi"
-            });
-            gallerylist.push({
-                href: "images/product/p10-600x683.jpg",
-                title: "Cashmere cuff vintage Levi maxi"
-            });
-            $("#wrap").bind('click', function() {
-                $.fancybox.open(gallerylist);
-                return false;
-            });
-
-            $("#boss-image-additional li a").on('click', function() {
-                $("#boss_large").attr("href", this)
-            });
-
-            /* Color Option */
-            $('.bt-image-option').on('click', function() {
-                $('.bt-image-option').each(function() {
-                    $(this).removeClass('active');
-                });
-                $(this).addClass('active');
-            });
-
-            /* boss-image-additional slider */
-            $('#boss-image-additional').carouFredSel({
-                auto: false,
-                responsive: true,
-                width: '100%',
-                prev: '#prev_image_additional',
-                next: '#next_image_additional',
-                swipe: {
-                    onTouch: true
-                },
-                items: {
-                    width: 120,
-                    height: 'auto',
-                    visible: {
-                        min: 1,
-                        max: 3
-                    }
-                },
-                scroll: {
-                    direction: 'left', //  The direction of the transition.
-                    duration: 500, //  The duration of the transition.
-                }
-            });
-
-        });
-
-        // function changeQty(increase) {
-        //     var qty = parseInt($('.select_number').find("input").val());
-        //     if (!isNaN(qty)) {
-        //         qty = increase ? qty + 1 : (qty > 1 ? qty - 1 : 1);
-        //         $('.select_number').find("input").val(qty);
-        //     } else {
-        //         $('.select_number').find("input").val(1);
-        //     }
-        // }
-
-        function goToByScroll(id) {
-            $('html,body').animate({
-                scrollTop: $("#" + id).offset().top
-            }, 'slow');
-        }
-        </script>
-        <script>
-        jQuery(document).ready(function() {
-            /* Related Product Slider */
-            $('#product_related').carouFredSel({
-                auto: false,
-                responsive: true,
-                width: '100%',
-                prev: '#prev_related',
-                next: '#next_related',
-                swipe: {
-                    onTouch: true
-                },
-                items: {
-                    width: 370,
-                    height: 470,
-                    visible: {
-                        min: 1,
-                        max: 3
-                    }
-                },
-                scroll: {
-                    direction: 'left', //  The direction of the transition.
-                    duration: 1000 //  The duration of the transition.
-                }
-            });
-            /* Related Article Slider */
-            $('#article_related').carouFredSel({
-                auto: false,
-                responsive: true,
-                width: '100%',
-                prev: '#prev_art_related',
-                next: '#next_art_related',
-                swipe: {
-                    onTouch: true
-                },
-                items: {
-                    width: 272,
-                    height: 'auto',
-                    visible: {
-                        min: 1,
-                        max: 3
-                    }
-                },
-                scroll: {
-                    direction: 'left', //  The direction of the transition.
-                    duration: 1000 //  The duration of the transition.
-                }
-            });
-        });
-        </script>
-        <script>
-        jQuery(document).ready(function() {
-
-            boss_quick_shop();
-            dataAnimate();
-
-            /* View Mode */
-            // Product List
-            $('#list-view').on('click', function() {
-                $('#content .product-layout').attr('class', 'product-layout product-list col-xs-12');
-                localStorage.setItem('display', 'list');
-            });
-            // Product Grid
-            $('#grid-view').on('click', function() {
-                // What a shame bootstrap does not take into account dynamically loaded columns
-                cols = $('#column-right, #column-left').length;
-                if (cols == 2) {
-                    $('#content .product-layout').attr('class',
-                        'product-layout product-grid col-lg-6 col-md-6 col-sm-6 col-xs-12');
-                } else if (cols == 1) {
-                    $('#content .product-layout').attr('class',
-                        'product-layout product-grid col-lg-4 col-md-4 col-sm-4 col-xs-12');
+            function triggerHtmlEvent(element, eventName) {
+                var event;
+                if (document.createEvent) {
+                    event = document.createEvent('HTMLEvents');
+                    event.initEvent(eventName, true, true);
+                    element.dispatchEvent(event);
                 } else {
-                    $('#content .product-layout').attr('class',
-                        'product-layout product-grid col-lg-3 col-md-3 col-sm-3 col-xs-12');
+                    event = document.createEventObject();
+                    event.eventType = eventName;
+                    element.fireEvent('on' + event.eventType, event);
                 }
-                localStorage.setItem('display', 'grid');
-            });
-            if (localStorage.getItem('display') == 'list') {
-                $('#list-view').trigger('click');
-            } else {
-                $('#grid-view').trigger('click');
             }
-        });
-        /* Modal Quick Shop */
-        $('#myModal').on('shown.bs.modal', function(e) {
-            $.fn.CloudZoom.defaults = {
-                adjustX: 0,
-                adjustY: 0,
-                tint: '#FFF',
-                tintOpacity: 0.5,
-                softFocus: 0,
-                lensOpacity: 0.7,
-                zoomWidth: '450',
-                zoomHeight: '552',
-                position: 'inside',
-                showTitle: 0,
-                titleOpacity: 0.5,
-                smoothMove: '3'
-            };
-            $('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
-        })
-        /* Quick Shop */
-        function boss_quick_shop() {
-            $('.product-thumb').each(function(index, value) {
-                var _qsHref =
-                    '<button class=\"btn-quickshop\" title =\"Quick Shop\" class=\"sft_quickshop_icon \" data-toggle=\"modal\" data-target=\"#myModal\">Quick Shop</button>';
-                $('.image', this).append(_qsHref);
+            $(document).ready(function() {
+                $('.delete-product').on('click', function() {
+                    var product = $(this).data('product');
+                    $.ajax({
+                        url: "{{ route('product.delete-from-cart') }}",
+                        type: "POST",
+                        data: {
+                            product: product,
+                            _token: "{{ csrf_token() }}"
+                        },
+                        success: function(data) {
+                            window.location.reload();
+                        },
+                        error: function(data) {
+                            window.location.reload();
+                        }
+                    });
+                });
+                // alert($('.goog-te-combo').val());
+                $('.lang-select').click(function() {
+                    var theLang = $(this).attr('data-lang');
+                    $('.goog-te-combo').val(theLang);
+
+                    window.location = $(this).attr('href');
+                    location.reload();
+
+                });
             });
-        }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <script>
+            $(document).ready(function() {
+
+                $("#quick_contact").validate({
+                    ignore: [],
+                    rules: {
+
+                        contact_name: {
+                            required: true,
+                        },
+                        contact_mail: {
+                            required: true,
+                        },
+                        contact_msg: {
+                            required: true,
+                        },
+
+                    },
+                    messages: {
+
+
+                    }
+                });
+                $.validator.addMethod("pwcheck",
+                    function(value, element) {
+                        return /^[A-Za-z0-9]+$/.test(value);
+                    });
+                $("#newslettter_form").validate({
+                    ignore: [],
+                    rules: {
+                        subscribe_email: {
+                            required: true,
+                        },
+                    },
+                    messages: {}
+                });
+                $.validator.addMethod("pwcheck",
+                    function(value, element) {
+                        return /^[A-Za-z0-9]+$/.test(value);
+                    });
+            });
         </script>
         <script>
-        /* Today Deal */
-        var myVar = setInterval(function() {
-            Deal0()
-        }, 1000);
+            jQuery(document).ready(function() {
+                /* bosszoomtoolbox */
+                $.fn.CloudZoom.defaults = {
+                    adjustX: 0,
+                    adjustY: 0,
+                    tint: '#FFF',
+                    tintOpacity: 0.5,
+                    softFocus: 0,
+                    lensOpacity: 0.7,
+                    zoomWidth: '450',
+                    zoomHeight: '512',
+                    position: 'inside',
+                    showTitle: 0,
+                    titleOpacity: 0.5,
+                    smoothMove: '3'
+                };
+                $('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
 
-        function Deal0() {
-            var i = 0;
-            var today = new Date();
-            var dateStr = "0000-00-00";
-            //alert(dateStr);
-            if (dateStr != "0000-00-00") {
-                var date = dateStr.split("-");
-                var date_end = new Date(date[0], (date[1] - 1), date[2]);
-                var deal = new Date();
-                deal.setTime(date_end - today);
-                //alert(deal);
-                if (date_end >= today) {
-                    var month = new Date(deal.getMonth(), deal.getMonth(), 0).getDate();
-                    var d = deal.getDate() + (month * deal.getMonth());
-                    var h = deal.getHours() + (d * 24);
-                    var m = deal.getMinutes();
-                    var s = deal.getSeconds();
-                    h = checkTime(h);
-                    m = checkTime(m);
-                    s = checkTime(s);
-                    $(".datetime00").html('<div class="sep"></div><div><span class="number">' + h +
-                        '</span><span>Hours</span></div><div class="sep"></div><div><span class="number">' + m +
-                        '</span><span>Mins</span></div><div class="sep"></div><div><span class="number">' + s +
-                        '</span><span>Secs</span></div>');
-                }
-            }
-            var today = new Date();
-            var dateStr = "2016-02-01";
-            //alert(dateStr);
-            if (dateStr != "0000-00-00") {
-                var date = dateStr.split("-");
-                var date_end = new Date(date[0], (date[1] - 1), date[2]);
-                var deal = new Date();
-                deal.setTime(date_end - today);
-                //alert(deal);
-                if (date_end >= today) {
-                    var month = new Date(deal.getMonth(), deal.getMonth(), 0).getDate();
-                    var d = deal.getDate() + (month * deal.getMonth());
-                    var h = deal.getHours() + (d * 24);
-                    var m = deal.getMinutes();
-                    var s = deal.getSeconds();
-                    h = checkTime(h);
-                    m = checkTime(m);
-                    s = checkTime(s);
-                    $(".datetime01").html('<div class="sep"></div><div><span class="number">' + h +
-                        '</span><span>Hours</span></div><div class="sep"></div><div><span class="number">' + m +
-                        '</span><span>Mins</span></div><div class="sep"></div><div><span class="number">' + s +
-                        '</span><span>Secs</span></div>');
-                }
-            }
-            var today = new Date();
-            var dateStr = "0000-00-00";
-            //alert(dateStr);
-            if (dateStr != "0000-00-00") {
-                var date = dateStr.split("-");
-                var date_end = new Date(date[0], (date[1] - 1), date[2]);
-                var deal = new Date();
-                deal.setTime(date_end - today);
-                //alert(deal);
-                if (date_end >= today) {
-                    var month = new Date(deal.getMonth(), deal.getMonth(), 0).getDate();
-                    var d = deal.getDate() + (month * deal.getMonth());
-                    var h = deal.getHours() + (d * 24);
-                    var m = deal.getMinutes();
-                    var s = deal.getSeconds();
-                    h = checkTime(h);
-                    m = checkTime(m);
-                    s = checkTime(s);
-                    $(".datetime02").html('<div class="sep"></div><div><span class="number">' + h +
-                        '</span><span>Hours</span></div><div class="sep"></div><div><span class="number">' + m +
-                        '</span><span>Mins</span></div><div class="sep"></div><div><span class="number">' + s +
-                        '</span><span>Secs</span></div>');
-                }
-            }
-            var today = new Date();
-            var dateStr = "0000-00-00";
-            //alert(dateStr);
-            if (dateStr != "0000-00-00") {
-                var date = dateStr.split("-");
-                var date_end = new Date(date[0], (date[1] - 1), date[2]);
-                var deal = new Date();
-                deal.setTime(date_end - today);
-                //alert(deal);
-                if (date_end >= today) {
-                    var month = new Date(deal.getMonth(), deal.getMonth(), 0).getDate();
-                    var d = deal.getDate() + (month * deal.getMonth());
-                    var h = deal.getHours() + (d * 24);
-                    var m = deal.getMinutes();
-                    var s = deal.getSeconds();
-                    h = checkTime(h);
-                    m = checkTime(m);
-                    s = checkTime(s);
-                    $(".datetime03").html('<div class="sep"></div><div><span class="number">' + h +
-                        '</span><span>Hours</span></div><div class="sep"></div><div><span class="number">' + m +
-                        '</span><span>Mins</span></div><div class="sep"></div><div><span class="number">' + s +
-                        '</span><span>Secs</span></div>');
-                }
-            }
-            var today = new Date();
-            var dateStr = "0000-00-00";
-            //alert(dateStr);
-            if (dateStr != "0000-00-00") {
-                var date = dateStr.split("-");
-                var date_end = new Date(date[0], (date[1] - 1), date[2]);
-                var deal = new Date();
-                deal.setTime(date_end - today);
-                //alert(deal);
-                if (date_end >= today) {
-                    var month = new Date(deal.getMonth(), deal.getMonth(), 0).getDate();
-                    var d = deal.getDate() + (month * deal.getMonth());
-                    var h = deal.getHours() + (d * 24);
-                    var m = deal.getMinutes();
-                    var s = deal.getSeconds();
-                    h = checkTime(h);
-                    m = checkTime(m);
-                    s = checkTime(s);
-                    $(".datetime04").html('<div class="sep"></div><div><span class="number">' + h +
-                        '</span><span>Hours</span></div><div class="sep"></div><div><span class="number">' + m +
-                        '</span><span>Mins</span></div><div class="sep"></div><div><span class="number">' + s +
-                        '</span><span>Secs</span></div>');
-                }
-            }
-        }
-
-        function checkTime(j) {
-            if (j < 10) {
-                j = "0" + j;
-            }
-            return j;
-        }
-
-        jQuery(document).ready(function() {
-            /* Main Slider */
-            $('.tp-banner0').show().revolution({
-                dottedOverlay: "none",
-                delay: 5000,
-                startWithSlide: 0,
-                startwidth: 870,
-                startheight: 450,
-                hideThumbs: 10,
-                hideTimerBar: "on",
-                thumbWidth: 50,
-                thumbHeight: 50,
-                thumbAmount: 4,
-                navigationType: "none",
-                navigationArrows: "solo",
-                navigationStyle: "round",
-                touchenabled: "on",
-                onHoverStop: "on",
-                swipe_velocity: 0.7,
-                swipe_min_touches: 1,
-                swipe_max_touches: 1,
-                drag_block_vertical: false,
-                parallax: "mouse",
-                parallaxBgFreeze: "on",
-                parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
-                keyboardNavigation: "off",
-                navigationHAlign: "center",
-                navigationVAlign: "bottom",
-                navigationHOffset: 0,
-                navigationVOffset: 20,
-                soloArrowLeftHalign: "left",
-                soloArrowLeftValign: "center",
-                soloArrowLeftHOffset: 50,
-                soloArrowLeftVOffset: 8,
-                soloArrowRightHalign: "right",
-                soloArrowRightValign: "center",
-                soloArrowRightHOffset: 50,
-                soloArrowRightVOffset: 8,
-                shadow: 0,
-                fullWidth: "on",
-                fullScreen: "off",
-                spinner: "spinner4",
-                stopLoop: "on",
-                stopAfterLoops: -1,
-                stopAtSlide: -1,
-                shuffle: "off",
-                autoHeight: "off",
-                forceFullWidth: "off",
-                hideThumbsOnMobile: "off",
-                hideNavDelayOnMobile: 1500,
-                hideBulletsOnMobile: "off",
-                hideArrowsOnMobile: "off",
-                hideThumbsUnderResolution: 0,
-                hideSliderAtLimit: 0,
-                hideCaptionAtLimit: 500,
-                hideAllCaptionAtLilmit: 500,
-                videoJsPath: "rs-plugin/videojs/",
-                fullScreenOffsetContainer: ""
-            });
-
-
-            loadtopmenu();
-            $("#boss-menu-category .boss_heading").on('click', function() {
-                $('#boss-menu-category').toggleClass('opencate');
-                loadtopmenu();
-            });
-
-            function loadtopmenu() {
-                var menuheight = $('#boss-menu-category .box-content').outerHeight();
-                var topcate = $('#boss-menu-category').offset().top;
-                $('#boss-menu-category .boss-menu-cate .nav_title').each(function(index, element) {
-                    var liheight = $(this).outerHeight();
-                    var subheight = $(this).next('.nav_submenu').outerHeight();
-                    var topheight = $(this).offset().top - topcate - 55;
+                //pass the images to Fancybox           
+                var gallerylist = [];
+                gallerylist.push({
+                    href: "images/product/p21-600x683.jpg",
+                    title: "Cashmere cuff vintage Levi maxi"
                 });
-            }
-            $('#boss-menu-category .b_menucategory_hidde,#boss-menu-category  .menu_loadmore_hidden').hide();
-            $('#boss-menu-category .menu_loadmore').on('click', function() {
-                $('#boss-menu-category .b_menucategory_hidde').slideToggle("normal", function() {
-                    $('#boss-menu-category .menu_loadmore').hide();
-                    $('#boss-menu-category .menu_loadmore_hidden').show();
+                gallerylist.push({
+                    href: "images/product/p18-600x683.jpg",
+                    title: "Cashmere cuff vintage Levi maxi"
                 });
-            });
-            $('#boss-menu-category .menu_loadmore_hidden').on('click', function() {
-                $('#boss-menu-category .b_menucategory_hidde').slideToggle("normal", function() {
-                    $('#boss-menu-category .menu_loadmore').show();
-                    $('#boss-menu-category .menu_loadmore_hidden').hide();
+                gallerylist.push({
+                    href: "images/product/p1-600x683.jpg",
+                    title: "Cashmere cuff vintage Levi maxi"
                 });
-            });
+                gallerylist.push({
+                    href: "images/product/p16-600x683.jpg",
+                    title: "Cashmere cuff vintage Levi maxi"
+                });
+                gallerylist.push({
+                    href: "images/product/p11-600x683.jpg",
+                    title: "Cashmere cuff vintage Levi maxi"
+                });
+                gallerylist.push({
+                    href: "images/product/p10-600x683.jpg",
+                    title: "Cashmere cuff vintage Levi maxi"
+                });
+                $("#wrap").bind('click', function() {
+                    $.fancybox.open(gallerylist);
+                    return false;
+                });
 
+                $("#boss-image-additional li a").on('click', function() {
+                    $("#boss_large").attr("href", this)
+                });
 
-            /* Today Deal */
-            setTimeout(function() {
-                $('#product_special_0').carouFredSel({
-                    auto: {
-                        play: false,
-                        timeoutDuration: 4000,
-                    },
+                /* Color Option */
+                $('.bt-image-option').on('click', function() {
+                    $('.bt-image-option').each(function() {
+                        $(this).removeClass('active');
+                    });
+                    $(this).addClass('active');
+                });
+
+                /* boss-image-additional slider */
+                $('#boss-image-additional').carouFredSel({
+                    auto: false,
                     responsive: true,
                     width: '100%',
-                    height: 'variable',
-                    prev: '#prev_special_0',
-                    next: '#next_special_0',
+                    prev: '#prev_image_additional',
+                    next: '#next_image_additional',
                     swipe: {
                         onTouch: true
                     },
                     items: {
-                        width: 230,
-                        height: 'variable',
+                        width: 120,
+                        height: 'auto',
                         visible: {
                             min: 1,
-                            max: 1,
+                            max: 3
                         }
                     },
                     scroll: {
                         direction: 'left', //  The direction of the transition.
-                        duration: 1200, //  The duration of the transition.
-                        items: 1,
-                    },
-
+                        duration: 500, //  The duration of the transition.
+                    }
                 });
-            }, 200);
 
-            /* Testimonial */
-            $('#boss_testimonial_0').carouFredSel({
-                auto: {
-                    play: false,
-                    timeoutDuration: 4500,
-                },
-                responsive: true,
-                width: '100%',
-                height: 'variable',
-                prev: '#prev_testimonial_0',
-                next: '#next_testimonial_0',
-                swipe: {
-                    onTouch: false
-                },
-                items: {
-                    /*width: image_width,*/
-                    height: 'variable',
-                    visible: {
-                        min: 1,
-                        max: 1
-                    }
-                },
-                scroll: {
-                    direction: 'left', //  The direction of the transition.
-                    duration: 1000 //  The duration of the transition.
-                },
-                onCreate: function() {
-                    $(window).smartresize(function() {
-                        $('#boss_testimonial_0 div.testimonial-item').css("height",
-                            getMaxHeight(
-                                '#boss_testimonial_0 div.testimonial-item'));
-                        $('#boss_testimonial_min_height_0 div.caroufredsel_wrapper').css(
-                            "width",
-                            '100%');
-                        $('#boss_testimonial_min_height_0 div.caroufredsel_wrapper #boss_testimonial_0')
-                            .css("width", '100%');
-                    });
-                }
-            });
-            $('#boss_testimonial_0 div.testimonial-item').css("height", getMaxHeight(
-                '#boss_testimonial_0 div.testimonial-item'));
-            $('#boss_testimonial_min_height_0 div.caroufredsel_wrapper').css("min-height", getMaxHeight(
-                '#boss_testimonial_0 div.testimonial-item'));
-
-            /* Best Product */
-            initCarousel(0, 0, 0, 1, 81);
-            checkDevices(0);
-            $("a.head_tabs0").on('click', function() {
-                if (getWidthBrowser() > 767) {
-                    return false;
-                }
-                if (!$(this).parent().hasClass('active')) {
-                    $(".head_tabs0").parent().removeClass("active");
-                    var $src_tab = $(this).attr("data-src");
-                    $($src_tab).parent().addClass("active");
-                    $(".content_tabs0").hide();
-                    var $selected_tab = $(this).attr("href");
-                    $($selected_tab).fadeIn();
-                }
-                return false;
-            });
-            $(window).resize(function() {
-                checkDevices(0);
             });
 
-            /* vaccines */
-            if ($(window).width() > 768) {
-                var image_width = 268;
-                var per_row = 3;
-                if ($(window).width() <= 1023) {
-                    per_row = 3;
-                }
-            } else {
-                if ($(window).width() < 480) {
-                    per_row = 1;
-                } else {
-                    per_row = 2;
-                }
-                var image_width = 200;
+            // function changeQty(increase) {
+            //     var qty = parseInt($('.select_number').find("input").val());
+            //     if (!isNaN(qty)) {
+            //         qty = increase ? qty + 1 : (qty > 1 ? qty - 1 : 1);
+            //         $('.select_number').find("input").val(qty);
+            //     } else {
+            //         $('.select_number').find("input").val(1);
+            //     }
+            // }
+
+            function goToByScroll(id) {
+                $('html,body').animate({
+                    scrollTop: $("#" + id).offset().top
+                }, 'slow');
             }
-            $('#boss_featured_0').carouFredSel({
-                auto: false,
-                responsive: true,
-                width: '100%',
-                height: 'auto',
-                prev: '#prev_featured_0',
-                next: '#next_featured_0',
-                pagination: '#bt_pag_0',
-                swipe: {
-                    onTouch: true
-                },
-                items: {
-                    width: image_width,
-                    height: 'auto',
-                    visible: {
-                        min: 1,
-                        max: per_row,
-                    }
-                },
-                scroll: {
-                    direction: 'left', //  The direction of the transition.
-                    duration: 1000 //  The duration of the transition.
-                },
-                onCreate: function() {
-                    $(window).smartresize(function() {
-                        if ($(window).width() > 768) {
-                            var image_width = 268;
-                            var per_row = 3;
-                            if ($(window).width() <= 1023) {
-                                per_row = 3;
-                            }
-                        } else {
-                            if ($(window).width() < 480) {
-                                per_row = 1;
-                            } else {
-                                per_row = 2;
-                            }
-                            var image_width = 200;
-                        }
-                        $('#boss_featured_0').carouFredSel({
-                            auto: false,
-                            responsive: true,
-                            width: '100%',
-                            height: 'auto',
-                            prev: '#prev_featured_0',
-                            next: '#next_featured_0',
-                            pagination: '#bt_pag_0',
-                            swipe: {
-                                onTouch: true
-                            },
-                            items: {
-                                width: image_width,
-                                height: 'auto',
-                                visible: {
-                                    min: 1,
-                                    max: per_row,
-                                }
-                            },
-                            scroll: {
-                                direction: 'left', //  The direction of the transition.
-                                duration: 1000 //  The duration of the transition.
-                            },
-                        });
-                        $('#bt_fea_pro_0 .box-content .caroufredsel_wrapper').css("height",
-                            getMaxHeight('#boss_featured_0 section.bt-item') + 10);
-                    });
-                },
-            });
-            $('#bt_fea_pro_0 .box-content .caroufredsel_wrapper').css("height", getMaxHeight(
-                '#boss_featured_0 section.bt-item') + 10);
-
-            /* cosmetics */
-            if ($(window).width() > 768) {
-                var image_width = 268;
-                var per_row = 3;
-                if ($(window).width() <= 1023) {
-                    per_row = 3;
-                }
-            } else {
-                if ($(window).width() < 480) {
-                    per_row = 1;
-                } else {
-                    per_row = 2;
-                }
-                var image_width = 200;
-            }
-            $('#boss_featured_1').carouFredSel({
-                auto: false,
-                responsive: true,
-                width: '100%',
-                height: 'auto',
-                prev: '#prev_featured_1',
-                next: '#next_featured_1',
-                pagination: '#bt_pag_1',
-                swipe: {
-                    onTouch: true
-                },
-                items: {
-                    width: image_width,
-                    height: 'auto',
-                    visible: {
-                        min: 1,
-                        max: per_row,
-                    }
-                },
-                scroll: {
-                    direction: 'left', //  The direction of the transition.
-                    duration: 1000 //  The duration of the transition.
-                },
-                onCreate: function() {
-                    $(window).smartresize(function() {
-                        if ($(window).width() > 768) {
-                            var image_width = 268;
-                            var per_row = 3;
-                            if ($(window).width() <= 1023) {
-                                per_row = 3;
-                            }
-                        } else {
-                            if ($(window).width() < 480) {
-                                per_row = 1;
-                            } else {
-                                per_row = 2;
-                            }
-                            var image_width = 200;
-                        }
-                        $('#boss_featured_1').carouFredSel({
-                            auto: false,
-                            responsive: true,
-                            width: '100%',
-                            height: 'auto',
-                            prev: '#prev_featured_1',
-                            next: '#next_featured_1',
-                            pagination: '#bt_pag_1',
-                            swipe: {
-                                onTouch: true
-                            },
-                            items: {
-                                width: image_width,
-                                height: 'auto',
-                                visible: {
-                                    min: 1,
-                                    max: per_row,
-                                }
-                            },
-                            scroll: {
-                                direction: 'left', //  The direction of the transition.
-                                duration: 1000 //  The duration of the transition.
-                            },
-                        });
-                        $('#bt_fea_pro_1 .box-content .caroufredsel_wrapper').css("height",
-                            getMaxHeight('#boss_featured_1 section.bt-item') + 10);
-                    });
-                },
-            });
-            $('#bt_fea_pro_1 .box-content .caroufredsel_wrapper').css("height", getMaxHeight(
-                '#boss_featured_1 section.bt-item') + 10);
-
-            /* vitamins */
-            if ($(window).width() > 768) {
-                var image_width = 268;
-                var per_row = 3;
-                if ($(window).width() <= 1023) {
-                    per_row = 3;
-                }
-            } else {
-                if ($(window).width() < 480) {
-                    per_row = 1;
-                } else {
-                    per_row = 2;
-                }
-                var image_width = 200;
-            }
-            $('#boss_featured_2').carouFredSel({
-                auto: false,
-                responsive: true,
-                width: '100%',
-                height: 'auto',
-                prev: '#prev_featured_2',
-                next: '#next_featured_2',
-                pagination: '#bt_pag_2',
-                swipe: {
-                    onTouch: true
-                },
-                items: {
-                    width: image_width,
-                    height: 'auto',
-                    visible: {
-                        min: 1,
-                        max: per_row,
-                    }
-                },
-                scroll: {
-                    direction: 'left', //  The direction of the transition.
-                    duration: 1000 //  The duration of the transition.
-                },
-                onCreate: function() {
-                    $(window).smartresize(function() {
-                        if ($(window).width() > 768) {
-                            var image_width = 268;
-                            var per_row = 3;
-                            if ($(window).width() <= 1023) {
-                                per_row = 3;
-                            }
-                        } else {
-                            if ($(window).width() < 480) {
-                                per_row = 1;
-                            } else {
-                                per_row = 2;
-                            }
-                            var image_width = 200;
-                        }
-                        $('#boss_featured_2').carouFredSel({
-                            auto: false,
-                            responsive: true,
-                            width: '100%',
-                            height: 'auto',
-                            prev: '#prev_featured_2',
-                            next: '#next_featured_2',
-                            pagination: '#bt_pag_2',
-                            swipe: {
-                                onTouch: true
-                            },
-                            items: {
-                                width: image_width,
-                                height: 'auto',
-                                visible: {
-                                    min: 1,
-                                    max: per_row,
-                                }
-                            },
-                            scroll: {
-                                direction: 'left', //  The direction of the transition.
-                                duration: 1000 //  The duration of the transition.
-                            },
-                        });
-                        $('#bt_fea_pro_2 .box-content .caroufredsel_wrapper').css("height",
-                            getMaxHeight('#boss_featured_2 section.bt-item') + 10);
-                    });
-                },
-            });
-            $('#bt_fea_pro_2 .box-content .caroufredsel_wrapper').css("height", getMaxHeight(
-                '#boss_featured_2 section.bt-item') + 10);
-
-            /* Product */
-            function loadslider($tabmodule) {
-                if ($(window).width() > 768) {
-                    var image_width = 100;
-                } else {
-                    var image_width = 300;
-                }
-                $('#boss_procate_' + $tabmodule).carouFredSel({
+        </script>
+        <script>
+            jQuery(document).ready(function() {
+                /* Related Product Slider */
+                $('#product_related').carouFredSel({
                     auto: false,
                     responsive: true,
                     width: '100%',
-                    height: 'variable',
-                    prev: '#bt_next_pro_' + $tabmodule,
-                    next: '#bt_prev_pro_' + $tabmodule,
-                    pagination: '#bt_pag_pro_' + $tabmodule,
+                    prev: '#prev_related',
+                    next: '#next_related',
                     swipe: {
                         onTouch: true
                     },
                     items: {
-                        width: image_width,
+                        width: 370,
+                        height: 470,
+                        visible: {
+                            min: 1,
+                            max: 3
+                        }
+                    },
+                    scroll: {
+                        direction: 'left', //  The direction of the transition.
+                        duration: 1000 //  The duration of the transition.
+                    }
+                });
+                /* Related Article Slider */
+                $('#article_related').carouFredSel({
+                    auto: false,
+                    responsive: true,
+                    width: '100%',
+                    prev: '#prev_art_related',
+                    next: '#next_art_related',
+                    swipe: {
+                        onTouch: true
+                    },
+                    items: {
+                        width: 272,
+                        height: 'auto',
+                        visible: {
+                            min: 1,
+                            max: 3
+                        }
+                    },
+                    scroll: {
+                        direction: 'left', //  The direction of the transition.
+                        duration: 1000 //  The duration of the transition.
+                    }
+                });
+            });
+        </script>
+        <script>
+            jQuery(document).ready(function() {
+
+                boss_quick_shop();
+                dataAnimate();
+
+                /* View Mode */
+                // Product List
+                $('#list-view').on('click', function() {
+                    $('#content .product-layout').attr('class', 'product-layout product-list col-xs-12');
+                    localStorage.setItem('display', 'list');
+                });
+                // Product Grid
+                $('#grid-view').on('click', function() {
+                    // What a shame bootstrap does not take into account dynamically loaded columns
+                    cols = $('#column-right, #column-left').length;
+                    if (cols == 2) {
+                        $('#content .product-layout').attr('class',
+                            'product-layout product-grid col-lg-6 col-md-6 col-sm-6 col-xs-12');
+                    } else if (cols == 1) {
+                        $('#content .product-layout').attr('class',
+                            'product-layout product-grid col-lg-4 col-md-4 col-sm-4 col-xs-12');
+                    } else {
+                        $('#content .product-layout').attr('class',
+                            'product-layout product-grid col-lg-3 col-md-3 col-sm-3 col-xs-12');
+                    }
+                    localStorage.setItem('display', 'grid');
+                });
+                if (localStorage.getItem('display') == 'list') {
+                    $('#list-view').trigger('click');
+                } else {
+                    $('#grid-view').trigger('click');
+                }
+            });
+            /* Modal Quick Shop */
+            $('#myModal').on('shown.bs.modal', function(e) {
+                $.fn.CloudZoom.defaults = {
+                    adjustX: 0,
+                    adjustY: 0,
+                    tint: '#FFF',
+                    tintOpacity: 0.5,
+                    softFocus: 0,
+                    lensOpacity: 0.7,
+                    zoomWidth: '450',
+                    zoomHeight: '552',
+                    position: 'inside',
+                    showTitle: 0,
+                    titleOpacity: 0.5,
+                    smoothMove: '3'
+                };
+                $('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
+            })
+            /* Quick Shop */
+            function boss_quick_shop() {
+                $('.product-thumb').each(function(index, value) {
+                    var _qsHref =
+                        '<button class=\"btn-quickshop\" title =\"Quick Shop\" class=\"sft_quickshop_icon \" data-toggle=\"modal\" data-target=\"#myModal\">Quick Shop</button>';
+                    $('.image', this).append(_qsHref);
+                });
+            }
+        </script>
+        <script>
+            /* Today Deal */
+            var myVar = setInterval(function() {
+                Deal0()
+            }, 1000);
+
+            function Deal0() {
+                var i = 0;
+                var today = new Date();
+                var dateStr = "0000-00-00";
+                //alert(dateStr);
+                if (dateStr != "0000-00-00") {
+                    var date = dateStr.split("-");
+                    var date_end = new Date(date[0], (date[1] - 1), date[2]);
+                    var deal = new Date();
+                    deal.setTime(date_end - today);
+                    //alert(deal);
+                    if (date_end >= today) {
+                        var month = new Date(deal.getMonth(), deal.getMonth(), 0).getDate();
+                        var d = deal.getDate() + (month * deal.getMonth());
+                        var h = deal.getHours() + (d * 24);
+                        var m = deal.getMinutes();
+                        var s = deal.getSeconds();
+                        h = checkTime(h);
+                        m = checkTime(m);
+                        s = checkTime(s);
+                        $(".datetime00").html('<div class="sep"></div><div><span class="number">' + h +
+                            '</span><span>Hours</span></div><div class="sep"></div><div><span class="number">' + m +
+                            '</span><span>Mins</span></div><div class="sep"></div><div><span class="number">' + s +
+                            '</span><span>Secs</span></div>');
+                    }
+                }
+                var today = new Date();
+                var dateStr = "2016-02-01";
+                //alert(dateStr);
+                if (dateStr != "0000-00-00") {
+                    var date = dateStr.split("-");
+                    var date_end = new Date(date[0], (date[1] - 1), date[2]);
+                    var deal = new Date();
+                    deal.setTime(date_end - today);
+                    //alert(deal);
+                    if (date_end >= today) {
+                        var month = new Date(deal.getMonth(), deal.getMonth(), 0).getDate();
+                        var d = deal.getDate() + (month * deal.getMonth());
+                        var h = deal.getHours() + (d * 24);
+                        var m = deal.getMinutes();
+                        var s = deal.getSeconds();
+                        h = checkTime(h);
+                        m = checkTime(m);
+                        s = checkTime(s);
+                        $(".datetime01").html('<div class="sep"></div><div><span class="number">' + h +
+                            '</span><span>Hours</span></div><div class="sep"></div><div><span class="number">' + m +
+                            '</span><span>Mins</span></div><div class="sep"></div><div><span class="number">' + s +
+                            '</span><span>Secs</span></div>');
+                    }
+                }
+                var today = new Date();
+                var dateStr = "0000-00-00";
+                //alert(dateStr);
+                if (dateStr != "0000-00-00") {
+                    var date = dateStr.split("-");
+                    var date_end = new Date(date[0], (date[1] - 1), date[2]);
+                    var deal = new Date();
+                    deal.setTime(date_end - today);
+                    //alert(deal);
+                    if (date_end >= today) {
+                        var month = new Date(deal.getMonth(), deal.getMonth(), 0).getDate();
+                        var d = deal.getDate() + (month * deal.getMonth());
+                        var h = deal.getHours() + (d * 24);
+                        var m = deal.getMinutes();
+                        var s = deal.getSeconds();
+                        h = checkTime(h);
+                        m = checkTime(m);
+                        s = checkTime(s);
+                        $(".datetime02").html('<div class="sep"></div><div><span class="number">' + h +
+                            '</span><span>Hours</span></div><div class="sep"></div><div><span class="number">' + m +
+                            '</span><span>Mins</span></div><div class="sep"></div><div><span class="number">' + s +
+                            '</span><span>Secs</span></div>');
+                    }
+                }
+                var today = new Date();
+                var dateStr = "0000-00-00";
+                //alert(dateStr);
+                if (dateStr != "0000-00-00") {
+                    var date = dateStr.split("-");
+                    var date_end = new Date(date[0], (date[1] - 1), date[2]);
+                    var deal = new Date();
+                    deal.setTime(date_end - today);
+                    //alert(deal);
+                    if (date_end >= today) {
+                        var month = new Date(deal.getMonth(), deal.getMonth(), 0).getDate();
+                        var d = deal.getDate() + (month * deal.getMonth());
+                        var h = deal.getHours() + (d * 24);
+                        var m = deal.getMinutes();
+                        var s = deal.getSeconds();
+                        h = checkTime(h);
+                        m = checkTime(m);
+                        s = checkTime(s);
+                        $(".datetime03").html('<div class="sep"></div><div><span class="number">' + h +
+                            '</span><span>Hours</span></div><div class="sep"></div><div><span class="number">' + m +
+                            '</span><span>Mins</span></div><div class="sep"></div><div><span class="number">' + s +
+                            '</span><span>Secs</span></div>');
+                    }
+                }
+                var today = new Date();
+                var dateStr = "0000-00-00";
+                //alert(dateStr);
+                if (dateStr != "0000-00-00") {
+                    var date = dateStr.split("-");
+                    var date_end = new Date(date[0], (date[1] - 1), date[2]);
+                    var deal = new Date();
+                    deal.setTime(date_end - today);
+                    //alert(deal);
+                    if (date_end >= today) {
+                        var month = new Date(deal.getMonth(), deal.getMonth(), 0).getDate();
+                        var d = deal.getDate() + (month * deal.getMonth());
+                        var h = deal.getHours() + (d * 24);
+                        var m = deal.getMinutes();
+                        var s = deal.getSeconds();
+                        h = checkTime(h);
+                        m = checkTime(m);
+                        s = checkTime(s);
+                        $(".datetime04").html('<div class="sep"></div><div><span class="number">' + h +
+                            '</span><span>Hours</span></div><div class="sep"></div><div><span class="number">' + m +
+                            '</span><span>Mins</span></div><div class="sep"></div><div><span class="number">' + s +
+                            '</span><span>Secs</span></div>');
+                    }
+                }
+            }
+
+            function checkTime(j) {
+                if (j < 10) {
+                    j = "0" + j;
+                }
+                return j;
+            }
+
+            jQuery(document).ready(function() {
+                /* Main Slider */
+                $('.tp-banner0').show().revolution({
+                    dottedOverlay: "none",
+                    delay: 5000,
+                    startWithSlide: 0,
+                    startwidth: 870,
+                    startheight: 450,
+                    hideThumbs: 10,
+                    hideTimerBar: "on",
+                    thumbWidth: 50,
+                    thumbHeight: 50,
+                    thumbAmount: 4,
+                    navigationType: "none",
+                    navigationArrows: "solo",
+                    navigationStyle: "round",
+                    touchenabled: "on",
+                    onHoverStop: "on",
+                    swipe_velocity: 0.7,
+                    swipe_min_touches: 1,
+                    swipe_max_touches: 1,
+                    drag_block_vertical: false,
+                    parallax: "mouse",
+                    parallaxBgFreeze: "on",
+                    parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+                    keyboardNavigation: "off",
+                    navigationHAlign: "center",
+                    navigationVAlign: "bottom",
+                    navigationHOffset: 0,
+                    navigationVOffset: 20,
+                    soloArrowLeftHalign: "left",
+                    soloArrowLeftValign: "center",
+                    soloArrowLeftHOffset: 50,
+                    soloArrowLeftVOffset: 8,
+                    soloArrowRightHalign: "right",
+                    soloArrowRightValign: "center",
+                    soloArrowRightHOffset: 50,
+                    soloArrowRightVOffset: 8,
+                    shadow: 0,
+                    fullWidth: "on",
+                    fullScreen: "off",
+                    spinner: "spinner4",
+                    stopLoop: "on",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    forceFullWidth: "off",
+                    hideThumbsOnMobile: "off",
+                    hideNavDelayOnMobile: 1500,
+                    hideBulletsOnMobile: "off",
+                    hideArrowsOnMobile: "off",
+                    hideThumbsUnderResolution: 0,
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 500,
+                    hideAllCaptionAtLilmit: 500,
+                    videoJsPath: "rs-plugin/videojs/",
+                    fullScreenOffsetContainer: ""
+                });
+
+
+                loadtopmenu();
+                $("#boss-menu-category .boss_heading").on('click', function() {
+                    $('#boss-menu-category').toggleClass('opencate');
+                    loadtopmenu();
+                });
+
+                function loadtopmenu() {
+                    var menuheight = $('#boss-menu-category .box-content').outerHeight();
+                    var topcate = $('#boss-menu-category').offset().top;
+                    $('#boss-menu-category .boss-menu-cate .nav_title').each(function(index, element) {
+                        var liheight = $(this).outerHeight();
+                        var subheight = $(this).next('.nav_submenu').outerHeight();
+                        var topheight = $(this).offset().top - topcate - 55;
+                    });
+                }
+                $('#boss-menu-category .b_menucategory_hidde,#boss-menu-category  .menu_loadmore_hidden').hide();
+                $('#boss-menu-category .menu_loadmore').on('click', function() {
+                    $('#boss-menu-category .b_menucategory_hidde').slideToggle("normal", function() {
+                        $('#boss-menu-category .menu_loadmore').hide();
+                        $('#boss-menu-category .menu_loadmore_hidden').show();
+                    });
+                });
+                $('#boss-menu-category .menu_loadmore_hidden').on('click', function() {
+                    $('#boss-menu-category .b_menucategory_hidde').slideToggle("normal", function() {
+                        $('#boss-menu-category .menu_loadmore').show();
+                        $('#boss-menu-category .menu_loadmore_hidden').hide();
+                    });
+                });
+
+
+                /* Today Deal */
+                setTimeout(function() {
+                    $('#product_special_0').carouFredSel({
+                        auto: {
+                            play: false,
+                            timeoutDuration: 4000,
+                        },
+                        responsive: true,
+                        width: '100%',
+                        height: 'variable',
+                        prev: '#prev_special_0',
+                        next: '#next_special_0',
+                        swipe: {
+                            onTouch: true
+                        },
+                        items: {
+                            width: 230,
+                            height: 'variable',
+                            visible: {
+                                min: 1,
+                                max: 1,
+                            }
+                        },
+                        scroll: {
+                            direction: 'left', //  The direction of the transition.
+                            duration: 1200, //  The duration of the transition.
+                            items: 1,
+                        },
+
+                    });
+                }, 200);
+
+                /* Testimonial */
+                $('#boss_testimonial_0').carouFredSel({
+                    auto: {
+                        play: false,
+                        timeoutDuration: 4500,
+                    },
+                    responsive: true,
+                    width: '100%',
+                    height: 'variable',
+                    prev: '#prev_testimonial_0',
+                    next: '#next_testimonial_0',
+                    swipe: {
+                        onTouch: false
+                    },
+                    items: {
+                        /*width: image_width,*/
                         height: 'variable',
                         visible: {
                             min: 1,
@@ -2075,98 +1400,425 @@ use App\Models\Client\Product;
                     scroll: {
                         direction: 'left', //  The direction of the transition.
                         duration: 1000 //  The duration of the transition.
+                    },
+                    onCreate: function() {
+                        $(window).smartresize(function() {
+                            $('#boss_testimonial_0 div.testimonial-item').css("height",
+                                getMaxHeight(
+                                    '#boss_testimonial_0 div.testimonial-item'));
+                            $('#boss_testimonial_min_height_0 div.caroufredsel_wrapper').css(
+                                "width",
+                                '100%');
+                            $('#boss_testimonial_min_height_0 div.caroufredsel_wrapper #boss_testimonial_0')
+                                .css("width", '100%');
+                        });
                     }
                 });
-            };
+                $('#boss_testimonial_0 div.testimonial-item').css("height", getMaxHeight(
+                    '#boss_testimonial_0 div.testimonial-item'));
+                $('#boss_testimonial_min_height_0 div.caroufredsel_wrapper').css("min-height", getMaxHeight(
+                    '#boss_testimonial_0 div.testimonial-item'));
 
-            boss_quick_shop();
-        });
+                /* Best Product */
+                initCarousel(0, 0, 0, 1, 81);
+                checkDevices(0);
+                $("a.head_tabs0").on('click', function() {
+                    if (getWidthBrowser() > 767) {
+                        return false;
+                    }
+                    if (!$(this).parent().hasClass('active')) {
+                        $(".head_tabs0").parent().removeClass("active");
+                        var $src_tab = $(this).attr("data-src");
+                        $($src_tab).parent().addClass("active");
+                        $(".content_tabs0").hide();
+                        var $selected_tab = $(this).attr("href");
+                        $($selected_tab).fadeIn();
+                    }
+                    return false;
+                });
+                $(window).resize(function() {
+                    checkDevices(0);
+                });
 
-        /* Modal Quick Shop */
-        $('#myModal').on('shown.bs.modal', function(e) {
-            $.fn.CloudZoom.defaults = {
-                adjustX: 0,
-                adjustY: 0,
-                tint: '#FFF',
-                tintOpacity: 0.5,
-                softFocus: 0,
-                lensOpacity: 0.7,
-                zoomWidth: '450',
-                zoomHeight: '552',
-                position: 'inside',
-                showTitle: 0,
-                titleOpacity: 0.5,
-                smoothMove: '3'
-            };
-            $('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
-        })
-        /* Quick Shop */
-        // function boss_quick_shop() {
-        //     $('.product-thumb').each(function(index, value) {
-        //         var _qsHref = '<button class=\"btn-quickshop\" title =\"Quick Shop\" class=\"sft_quickshop_icon \" data-toggle=\"modal\" data-target=\"#myModal\">Quick Shop</button>';
-        //         $('.image', this).append(_qsHref);
-        //     });
-        // }
-        </script>
-        <script>
-        jQuery(document).ready(function() {
+                /* vaccines */
+                if ($(window).width() > 768) {
+                    var image_width = 268;
+                    var per_row = 3;
+                    if ($(window).width() <= 1023) {
+                        per_row = 3;
+                    }
+                } else {
+                    if ($(window).width() < 480) {
+                        per_row = 1;
+                    } else {
+                        per_row = 2;
+                    }
+                    var image_width = 200;
+                }
+                $('#boss_featured_0').carouFredSel({
+                    auto: false,
+                    responsive: true,
+                    width: '100%',
+                    height: 'auto',
+                    prev: '#prev_featured_0',
+                    next: '#next_featured_0',
+                    pagination: '#bt_pag_0',
+                    swipe: {
+                        onTouch: true
+                    },
+                    items: {
+                        width: image_width,
+                        height: 'auto',
+                        visible: {
+                            min: 1,
+                            max: per_row,
+                        }
+                    },
+                    scroll: {
+                        direction: 'left', //  The direction of the transition.
+                        duration: 1000 //  The duration of the transition.
+                    },
+                    onCreate: function() {
+                        $(window).smartresize(function() {
+                            if ($(window).width() > 768) {
+                                var image_width = 268;
+                                var per_row = 3;
+                                if ($(window).width() <= 1023) {
+                                    per_row = 3;
+                                }
+                            } else {
+                                if ($(window).width() < 480) {
+                                    per_row = 1;
+                                } else {
+                                    per_row = 2;
+                                }
+                                var image_width = 200;
+                            }
+                            $('#boss_featured_0').carouFredSel({
+                                auto: false,
+                                responsive: true,
+                                width: '100%',
+                                height: 'auto',
+                                prev: '#prev_featured_0',
+                                next: '#next_featured_0',
+                                pagination: '#bt_pag_0',
+                                swipe: {
+                                    onTouch: true
+                                },
+                                items: {
+                                    width: image_width,
+                                    height: 'auto',
+                                    visible: {
+                                        min: 1,
+                                        max: per_row,
+                                    }
+                                },
+                                scroll: {
+                                    direction: 'left', //  The direction of the transition.
+                                    duration: 1000 //  The duration of the transition.
+                                },
+                            });
+                            $('#bt_fea_pro_0 .box-content .caroufredsel_wrapper').css("height",
+                                getMaxHeight('#boss_featured_0 section.bt-item') + 10);
+                        });
+                    },
+                });
+                $('#bt_fea_pro_0 .box-content .caroufredsel_wrapper').css("height", getMaxHeight(
+                    '#boss_featured_0 section.bt-item') + 10);
 
-        });
+                /* cosmetics */
+                if ($(window).width() > 768) {
+                    var image_width = 268;
+                    var per_row = 3;
+                    if ($(window).width() <= 1023) {
+                        per_row = 3;
+                    }
+                } else {
+                    if ($(window).width() < 480) {
+                        per_row = 1;
+                    } else {
+                        per_row = 2;
+                    }
+                    var image_width = 200;
+                }
+                $('#boss_featured_1').carouFredSel({
+                    auto: false,
+                    responsive: true,
+                    width: '100%',
+                    height: 'auto',
+                    prev: '#prev_featured_1',
+                    next: '#next_featured_1',
+                    pagination: '#bt_pag_1',
+                    swipe: {
+                        onTouch: true
+                    },
+                    items: {
+                        width: image_width,
+                        height: 'auto',
+                        visible: {
+                            min: 1,
+                            max: per_row,
+                        }
+                    },
+                    scroll: {
+                        direction: 'left', //  The direction of the transition.
+                        duration: 1000 //  The duration of the transition.
+                    },
+                    onCreate: function() {
+                        $(window).smartresize(function() {
+                            if ($(window).width() > 768) {
+                                var image_width = 268;
+                                var per_row = 3;
+                                if ($(window).width() <= 1023) {
+                                    per_row = 3;
+                                }
+                            } else {
+                                if ($(window).width() < 480) {
+                                    per_row = 1;
+                                } else {
+                                    per_row = 2;
+                                }
+                                var image_width = 200;
+                            }
+                            $('#boss_featured_1').carouFredSel({
+                                auto: false,
+                                responsive: true,
+                                width: '100%',
+                                height: 'auto',
+                                prev: '#prev_featured_1',
+                                next: '#next_featured_1',
+                                pagination: '#bt_pag_1',
+                                swipe: {
+                                    onTouch: true
+                                },
+                                items: {
+                                    width: image_width,
+                                    height: 'auto',
+                                    visible: {
+                                        min: 1,
+                                        max: per_row,
+                                    }
+                                },
+                                scroll: {
+                                    direction: 'left', //  The direction of the transition.
+                                    duration: 1000 //  The duration of the transition.
+                                },
+                            });
+                            $('#bt_fea_pro_1 .box-content .caroufredsel_wrapper').css("height",
+                                getMaxHeight('#boss_featured_1 section.bt-item') + 10);
+                        });
+                    },
+                });
+                $('#bt_fea_pro_1 .box-content .caroufredsel_wrapper').css("height", getMaxHeight(
+                    '#boss_featured_1 section.bt-item') + 10);
 
-        // function changeQty(position, increase) {
-        //     var qty = parseInt($('#select-number' + position + '').val());
-        //     if (!isNaN(qty)) {
-        //         qty = increase ? qty + 1 : (qty - 1 > 1 ? qty - 1 : 1);
-        //         $('#select-number' + position + '').val(qty);
-        //     } else {
-        //         $('#select-number' + position + '').val(1);
-        //     }
-        //     position = '';
-        // }
-        </script>
-        <script>
-        jQuery(document).ready(function() {
-            $('[data-toggle="collapse"]').click(function() {
-                $('.panel-heading').removeClass('active')
-                $(this).parents('.panel-heading').addClass('active');
+                /* vitamins */
+                if ($(window).width() > 768) {
+                    var image_width = 268;
+                    var per_row = 3;
+                    if ($(window).width() <= 1023) {
+                        per_row = 3;
+                    }
+                } else {
+                    if ($(window).width() < 480) {
+                        per_row = 1;
+                    } else {
+                        per_row = 2;
+                    }
+                    var image_width = 200;
+                }
+                $('#boss_featured_2').carouFredSel({
+                    auto: false,
+                    responsive: true,
+                    width: '100%',
+                    height: 'auto',
+                    prev: '#prev_featured_2',
+                    next: '#next_featured_2',
+                    pagination: '#bt_pag_2',
+                    swipe: {
+                        onTouch: true
+                    },
+                    items: {
+                        width: image_width,
+                        height: 'auto',
+                        visible: {
+                            min: 1,
+                            max: per_row,
+                        }
+                    },
+                    scroll: {
+                        direction: 'left', //  The direction of the transition.
+                        duration: 1000 //  The duration of the transition.
+                    },
+                    onCreate: function() {
+                        $(window).smartresize(function() {
+                            if ($(window).width() > 768) {
+                                var image_width = 268;
+                                var per_row = 3;
+                                if ($(window).width() <= 1023) {
+                                    per_row = 3;
+                                }
+                            } else {
+                                if ($(window).width() < 480) {
+                                    per_row = 1;
+                                } else {
+                                    per_row = 2;
+                                }
+                                var image_width = 200;
+                            }
+                            $('#boss_featured_2').carouFredSel({
+                                auto: false,
+                                responsive: true,
+                                width: '100%',
+                                height: 'auto',
+                                prev: '#prev_featured_2',
+                                next: '#next_featured_2',
+                                pagination: '#bt_pag_2',
+                                swipe: {
+                                    onTouch: true
+                                },
+                                items: {
+                                    width: image_width,
+                                    height: 'auto',
+                                    visible: {
+                                        min: 1,
+                                        max: per_row,
+                                    }
+                                },
+                                scroll: {
+                                    direction: 'left', //  The direction of the transition.
+                                    duration: 1000 //  The duration of the transition.
+                                },
+                            });
+                            $('#bt_fea_pro_2 .box-content .caroufredsel_wrapper').css("height",
+                                getMaxHeight('#boss_featured_2 section.bt-item') + 10);
+                        });
+                    },
+                });
+                $('#bt_fea_pro_2 .box-content .caroufredsel_wrapper').css("height", getMaxHeight(
+                    '#boss_featured_2 section.bt-item') + 10);
+
+                /* Product */
+                function loadslider($tabmodule) {
+                    if ($(window).width() > 768) {
+                        var image_width = 100;
+                    } else {
+                        var image_width = 300;
+                    }
+                    $('#boss_procate_' + $tabmodule).carouFredSel({
+                        auto: false,
+                        responsive: true,
+                        width: '100%',
+                        height: 'variable',
+                        prev: '#bt_next_pro_' + $tabmodule,
+                        next: '#bt_prev_pro_' + $tabmodule,
+                        pagination: '#bt_pag_pro_' + $tabmodule,
+                        swipe: {
+                            onTouch: true
+                        },
+                        items: {
+                            width: image_width,
+                            height: 'variable',
+                            visible: {
+                                min: 1,
+                                max: 1
+                            }
+                        },
+                        scroll: {
+                            direction: 'left', //  The direction of the transition.
+                            duration: 1000 //  The duration of the transition.
+                        }
+                    });
+                };
+
+                boss_quick_shop();
+            });
+
+            /* Modal Quick Shop */
+            $('#myModal').on('shown.bs.modal', function(e) {
+                $.fn.CloudZoom.defaults = {
+                    adjustX: 0,
+                    adjustY: 0,
+                    tint: '#FFF',
+                    tintOpacity: 0.5,
+                    softFocus: 0,
+                    lensOpacity: 0.7,
+                    zoomWidth: '450',
+                    zoomHeight: '552',
+                    position: 'inside',
+                    showTitle: 0,
+                    titleOpacity: 0.5,
+                    smoothMove: '3'
+                };
+                $('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
             })
+            /* Quick Shop */
+            // function boss_quick_shop() {
+            //     $('.product-thumb').each(function(index, value) {
+            //         var _qsHref = '<button class=\"btn-quickshop\" title =\"Quick Shop\" class=\"sft_quickshop_icon \" data-toggle=\"modal\" data-target=\"#myModal\">Quick Shop</button>';
+            //         $('.image', this).append(_qsHref);
+            //     });
+            // }
+        </script>
+        <script>
+            jQuery(document).ready(function() {
 
-            /* Billing Option */
-            $('input[name=\'payment_address\']').on('change', function() {
-                if (this.value == 'new') {
-                    $('#payment-existing').hide();
-                    $('#payment-new').show();
-                } else {
-                    $('#payment-existing').show();
-                    $('#payment-new').hide();
-                }
             });
 
-            /* Shipping Option */
-            $('input[name=\'shipping_address\']').on('change', function() {
-                if (this.value == 'new') {
-                    $('#shipping-existing').hide();
-                    $('#shipping-new').show();
-                } else {
-                    $('#shipping-existing').show();
-                    $('#shipping-new').hide();
-                }
+            // function changeQty(position, increase) {
+            //     var qty = parseInt($('#select-number' + position + '').val());
+            //     if (!isNaN(qty)) {
+            //         qty = increase ? qty + 1 : (qty - 1 > 1 ? qty - 1 : 1);
+            //         $('#select-number' + position + '').val(qty);
+            //     } else {
+            //         $('#select-number' + position + '').val(1);
+            //     }
+            //     position = '';
+            // }
+        </script>
+        <script>
+            jQuery(document).ready(function() {
+                $('[data-toggle="collapse"]').click(function() {
+                    $('.panel-heading').removeClass('active')
+                    $(this).parents('.panel-heading').addClass('active');
+                })
+
+                /* Billing Option */
+                $('input[name=\'payment_address\']').on('change', function() {
+                    if (this.value == 'new') {
+                        $('#payment-existing').hide();
+                        $('#payment-new').show();
+                    } else {
+                        $('#payment-existing').show();
+                        $('#payment-new').hide();
+                    }
+                });
+
+                /* Shipping Option */
+                $('input[name=\'shipping_address\']').on('change', function() {
+                    if (this.value == 'new') {
+                        $('#shipping-existing').hide();
+                        $('#shipping-new').show();
+                    } else {
+                        $('#shipping-existing').show();
+                        $('#shipping-new').hide();
+                    }
+                });
+
+                $('#button-confirm').on('click', function() {
+                    location = 'checkout-success.html';
+                });
+
+                // $(".prod-item-bottomdiv .zoom-image").click(function() {
+                //     $(".zoom-imgbig-div").addClass("show");
+                //     $(".zoom-imgbig-div").removeClass("hide");
+                // });
+                // $(".close-icon").click(function() {
+                //     $(".zoom-imgbig-div").removeClass("show");
+                //     $(".zoom-imgbig-div").addClass("hide");
+
+                // });
             });
-
-            $('#button-confirm').on('click', function() {
-                location = 'checkout-success.html';
-            });
-
-            // $(".prod-item-bottomdiv .zoom-image").click(function() {
-            //     $(".zoom-imgbig-div").addClass("show");
-            //     $(".zoom-imgbig-div").removeClass("hide");
-            // });
-            // $(".close-icon").click(function() {
-            //     $(".zoom-imgbig-div").removeClass("show");
-            //     $(".zoom-imgbig-div").addClass("hide");
-
-            // });
-        });
         </script>
 
 </body>

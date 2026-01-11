@@ -52,6 +52,12 @@ Route::get('/product/cart', 'Client\CartController@show_cart')->name('product.sh
 Route::get('/product/{product_slug}', 'Client\ProductController@product_preview')->name('client.product.product-preview');
 Route::post('/delete-from-cart', 'Client\ProductController@delete_from_cart')->name('product.delete-from-cart');
 
+//ragini
+Route::get('/category/{category_id}/products', 'Client\ProductController@productsByCategory')->name('client2.category-product');
+// Route::get('/category/{category_id}/products', 'Client\ProductController@getProductsByCategory')->name('client2.get-products-by-category');
+
+
+
 Route::get('/login', 'Auth\LoginController@show_login_form')->name('login');
 // Route::post('/login', 'Auth\LoginController@show_login_form')->name('client.login');
 
@@ -89,6 +95,14 @@ Route::group(['middleware' => 'auth:admin'], function () {
     Route::post('/admin/product-variant/update', 'Admin\Product\ProductController@variant_update')->name('admin.product-variant.update');
     Route::post('/admin/product-variant/delete', 'Admin\Product\ProductController@variant_delete')->name('admin.product-variant.delete');
 
+    // ragini
+    Route::get('/admin/category/list', 'Admin\CategoryController@lists')->name('admin.category.list');
+    Route::get('/admin/category/add', 'Admin\CategoryController@add')->name('admin.category.add');
+    Route::post('/admin/category/insert', 'Admin\CategoryController@insert')->name('admin.category.insert');
+    Route::get('/admin/category/edit/{id}', 'Admin\CategoryController@edit')->name('admin.category.edit');
+    Route::post('/admin/category/update/{id}', 'Admin\CategoryController@update')->name('admin.category.update');
+    Route::post('/admin/category/delete', 'Admin\CategoryController@delete')->name('admin.category.delete');
+    
     Route::get('/admin/collection/list', 'Admin\GenderController@lists')->name('admin.gender.list');
     Route::get('/admin/collection/add', 'Admin\GenderController@add')->name('admin.gender.add');
     Route::post('/admin/collection/insert', 'Admin\GenderController@insert')->name('admin.gender.insert');

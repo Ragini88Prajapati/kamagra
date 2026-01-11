@@ -2,6 +2,73 @@
 
 All notable changes of the PHPUnit 8.5 release series are documented in this file using the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
+## [8.5.50] - 2025-12-06
+
+* No changes; `phpunit.phar` rebuilt with PHP 8.4 to work around PHP-Scoper issue [#1139](https://github.com/humbug/php-scoper/issues/1139)
+
+## [8.5.49] - 2025-12-01
+
+* No changes; `phpunit.phar` rebuilt with updated dependencies
+
+## [8.5.48] - 2025-09-24
+
+* No changes; `phpunit.phar` rebuilt with updated dependencies
+
+## [8.5.47] - 2025-09-23
+
+* No changes; `phpunit.phar` rebuilt with updated dependencies
+
+## [8.5.46] - 2025-09-14
+
+### Changed
+
+* [#6366](https://github.com/sebastianbergmann/phpunit/issues/6366): Exclude `__sleep()` and `__wakeup()` from test double code generation on PHP >= 8.5
+
+## [8.5.45] - 2025-09-11
+
+### Changed
+
+* Implement `__serialize()` in addition to `__sleep()` (which will be deprecated in PHP 8.5)
+
+## [8.5.44] - 2025-08-20
+
+### Changed
+
+* Do not configure `report_memleaks` setting (which will be deprecated in PHP 8.5) for PHPT processes
+
+## [8.5.43] - 2025-08-10
+
+### Changed
+
+* Do not use `ReflectionProperty::setAccessible()` with PHP >= 8.1
+* Do not use `SplObjectStorage` methods that will be deprecated in PHP 8.5
+
+## [8.5.42] - 2025-05-02
+
+### Changed
+
+* [#5956](https://github.com/sebastianbergmann/phpunit/issues/5956): Improved handling of deprecated `E_STRICT` constant
+* Improved message when test is considered risky for printing unexpected output
+
+## [8.5.41] - 2024-12-05
+
+### Fixed
+
+* [#6071](https://github.com/sebastianbergmann/phpunit/issues/6071): PHP Archives (PHARs) of PHPUnit 8.5 and PHPUnit 9.6 bundle outdated versions of Prophecy
+
+## [8.5.40] - 2024-09-19
+
+### Changed
+
+* [#5956](https://github.com/sebastianbergmann/phpunit/issues/5956): Deprecation of the `E_STRICT` constant in PHP 8.4
+* Removed `.phpstorm.meta.php` file as methods such as `TestCase::createStub()` use generics / template types for their return types and PhpStorm, for example, uses that information
+
+## [8.5.39] - 2024-07-10
+
+### Changed
+
+* Updated dependencies (so that users that install using Composer's `--prefer-lowest` CLI option also get recent versions)
+
 ## [8.5.38] - 2024-04-05
 
 ### Changed
@@ -301,6 +368,18 @@ All notable changes of the PHPUnit 8.5 release series are documented in this fil
 * [#3967](https://github.com/sebastianbergmann/phpunit/issues/3967): Cannot double interface that extends interface that extends `\Throwable`
 * [#3968](https://github.com/sebastianbergmann/phpunit/pull/3968): Test class run in a separate PHP process are passing when `exit` called inside
 
+[8.5.50]: https://github.com/sebastianbergmann/phpunit/compare/8.5.49...8.5.50
+[8.5.49]: https://github.com/sebastianbergmann/phpunit/compare/8.5.48...8.5.49
+[8.5.48]: https://github.com/sebastianbergmann/phpunit/compare/8.5.47...8.5.48
+[8.5.47]: https://github.com/sebastianbergmann/phpunit/compare/8.5.46...8.5.47
+[8.5.46]: https://github.com/sebastianbergmann/phpunit/compare/8.5.45...8.5.46
+[8.5.45]: https://github.com/sebastianbergmann/phpunit/compare/8.5.44...8.5.45
+[8.5.44]: https://github.com/sebastianbergmann/phpunit/compare/8.5.43...8.5.44
+[8.5.43]: https://github.com/sebastianbergmann/phpunit/compare/8.5.42...8.5.43
+[8.5.42]: https://github.com/sebastianbergmann/phpunit/compare/8.5.41...8.5.42
+[8.5.41]: https://github.com/sebastianbergmann/phpunit/compare/8.5.40...8.5.41
+[8.5.40]: https://github.com/sebastianbergmann/phpunit/compare/8.5.39...8.5.40
+[8.5.39]: https://github.com/sebastianbergmann/phpunit/compare/8.5.38...8.5.39
 [8.5.38]: https://github.com/sebastianbergmann/phpunit/compare/8.5.37...8.5.38
 [8.5.37]: https://github.com/sebastianbergmann/phpunit/compare/8.5.36...8.5.37
 [8.5.36]: https://github.com/sebastianbergmann/phpunit/compare/8.5.35...8.5.36

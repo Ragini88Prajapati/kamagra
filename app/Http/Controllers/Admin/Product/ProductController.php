@@ -8,6 +8,7 @@ use App\Models\Admin\Gender;
 use App\Models\Admin\ProductType;
 use App\Models\Admin\Product;
 use App\Models\Admin\Product_images;
+use App\Models\Admin\Category;
 use App\ProductVariant;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -39,6 +40,8 @@ class ProductController extends Controller
         $data['brand_list'] = Brand::select('id', 'name')->where('status', 1)->get();
         $data['gender_list'] = Gender::select('id', 'name')->where('status', 1)->get();
         $data['product_type_list'] = ProductType::select('id', 'name')->where('status', 1)->get();
+        // ragini
+        $data['categories'] = Category::select('id', 'name')->where('status', 1)->get(); 
         return view('admin.product.product-form', $data);
     }
 
@@ -57,6 +60,7 @@ class ProductController extends Controller
             // 'mrp'  => 'required',
             // 'discount'  => 'required',
             'price'  => 'required',
+            'category_id'  => 'required',
             // 'gender' => 'required|exists:gender,id',
             'image' => 'mimes:jpeg,jpg,png|required',
             'product_image.*'  => 'mimes:jpeg,jpg,png',
@@ -90,7 +94,7 @@ class ProductController extends Controller
         $product->twitter_description = $request -> twitter_description;
         
         $product->price  = $validated_request['price'];
-        // $product->brand_id  = $validated_request['brand'];
+        $product->category_id  = $validated_request['category_id'];
         // $product->gender_id  = $validated_request['gender'];
         // $product->product_type_id  = $validated_request['product_type'];
         $product->number_text = $validated_request['number_text'];
@@ -143,6 +147,8 @@ class ProductController extends Controller
         $data['brand_list'] = Brand::select('id', 'name')->where('status', 1)->get();
         $data['gender_list'] = Gender::select('id', 'name')->where('status', 1)->get();
         $data['product_type_list'] = ProductType::select('id', 'name')->where('status', 1)->get();
+        // ragini
+        $data['categories'] = Category::select('id', 'name')->where('status', 1)->get();
         return view('admin.product.product-form', $data);
     }
 
@@ -162,6 +168,7 @@ class ProductController extends Controller
             // 'mrp'  => 'required',
             // 'discount'  => 'required',
             'price'  => 'required',
+            'category_id'  => 'required',
             // 'gender' => 'required|exists:gender,id',
             'image' => 'mimes:jpeg,jpg,png',
             'product_image.*'  => 'mimes:jpeg,jpg,png',
@@ -179,6 +186,7 @@ class ProductController extends Controller
         // $product->mrp  = $validated_request['mrp'];
         // $product->discount  = $validated_request['discount'];
         $product->price  = $validated_request['price'];
+        $product->category_id  = $validated_request['category_id'];
         // $product->brand_id  = $validated_request['brand'];
         // $product->gender_id  = $validated_request['gender'];
         // $product->product_type_id  = $validated_request['product_type'];

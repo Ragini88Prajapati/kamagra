@@ -10,7 +10,7 @@
 }
 
 .navbar a:hover {
-    color: #118acb;
+    color: #7F447A;
 }
 
 .navbar .navbar-collapse {
@@ -46,7 +46,7 @@
 .navbar .nav>li.dropdown .dropdown-menu {
     background-clip: padding-box;
     background-color: #ffffff;
-    border-bottom: 3px solid #118acb;
+    border-bottom: 3px solid #7F447A;
     border-top: 0 none;
     border-left: 0 none;
     border-right: 0 none;

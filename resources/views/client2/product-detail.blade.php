@@ -66,7 +66,23 @@ use App\ProductVariant;
                         </div>
                     </div>
                     <div class="box-content">
+
+                        <!-- ragini -->
                         <ul class="box-category boss-menu-cate new-iconarrow sidemenu-medicine">
+                            @forelse ($categories as $category)
+                            <li>
+                                <div class="nav_title">
+                                    <i class="fa-solid fa-capsules" aria-hidden="true"></i>
+                                    <a class="title" href="{{ route('client2.category-product', $category->id) }}">{{ $category->name }}</a>
+                                </div>
+                            </li>
+                            @empty
+                            <p>No categories found.</p>
+                            @endforelse
+                        </ul>
+
+                        <!-- comment by ragini -->
+                        <!-- <ul class="box-category boss-menu-cate new-iconarrow sidemenu-medicine">
                             @forelse ($product_list as $item)
                             <li>
                                 <div class="nav_title"> <i class="fa-solid fa-capsules"></i> <a
@@ -78,7 +94,8 @@ use App\ProductVariant;
 
                             @endforelse
 
-                        </ul>
+                        </ul> -->
+
                     </div><!-- /.box-content -->
                 </div>
             </div>

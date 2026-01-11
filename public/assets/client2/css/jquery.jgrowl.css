@@ -68,7 +68,7 @@ div.jGrowl div.jGrowl-closer {
 
 div.jGrowl div.jGrowl-notification .jGrowl-button .buttons {
     margin: 0;
-    background: #118acb;
+    background: #7F447A;
     padding: 20px;
 }
 
@@ -85,8 +85,8 @@ div.jGrowl div.jGrowl-notification .jGrowl-button .buttons {
 }
 
 .jGrowl-button .buttons .btn:hover {
-    background-color: #118acb;
-    border: 1px solid #118acb;
+    background-color: #7F447A;
+    border: 1px solid #7F447A;
 }
 
 div.jGrowl div.jGrowl-notification {
@@ -101,7 +101,7 @@ div.jGrowl div.jGrowl-closer {
 div.jGrowl div.jGrowl-notification div.jGrowl-header {
     font-size: 14px;
     font-weight: 400;
-    color: #118acb;
+    color: #7F447A;
     padding-bottom: 8px;
     padding-top: 8px;
     padding-left: 15px;
@@ -136,7 +136,7 @@ div.jGrowl div.jGrowl-notification div.jGrowl-message h3 {
 div.jGrowl div.jGrowl-notification div.jGrowl-message h3 a {
     font-weight: 400;
     text-decoration: none;
-    color: #118acb
+    color: #7F447A
 }
 
 div.jGrowl div.jGrowl-notification div.jGrowl-message h3 a:hover {
@@ -177,7 +177,7 @@ div.jGrowl div.jGrowl-closer {
 }
 
 div.jGrowl div.jGrowl-closer:hover {
-    color: #118acb
+    color: #7F447A
 }
 
 

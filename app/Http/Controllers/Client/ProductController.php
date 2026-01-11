@@ -8,6 +8,7 @@ use App\Models\Client\Product;
 use App\Models\Client\ProductType;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
+use App\Models\Admin\Category;
 
 class ProductController extends Controller
 {
@@ -79,10 +80,32 @@ class ProductController extends Controller
 
         $data['gender_list'] = Gender::select('id', 'name')->where('status', 1)->get();
         $data['product_type_list'] = ProductType::select('id', 'name')->where('status', 1)->get();
+        $data['categories'] = Category::select('id', 'name')->where('status', 1)->get();
+        $data['static_seo'] = (object)['meta_title' => 'Product List - Online Kamagra Store'];
         // return $this->_display('client.product.product-list', $data);
         // dd($data);
         return $this->_display('client2.product-list', $data);
     }
+
+    // ragini
+    public function productsByCategory($category_id)
+    {
+        // dd("ragini");
+        $category = Category::findOrFail($category_id);
+        $products = $category->products()->where('status', 1)->get();
+
+        $cart_data = CartController::get_cart_details();
+
+        $data = [
+            'products' => $products,
+            'categories' => Category::select('id', 'name')->where('status', 1)->get(),
+            'cart_data' => $cart_data,
+        ];
+
+        return view('client2.category-product', $data);
+    }
+
+    
 
     public function product_list_filter()
     {
@@ -107,9 +130,12 @@ class ProductController extends Controller
 
     public function product_preview($product_slug  = '')
     {
+        // dd('ragini');
         $data = $this->data;
         $data['product_list'] = Product::where('status',1)->select('name', 'slug', 'id', 'mrp', 'price', 'subtitle', 'discount', 'image', 'image_path', 'gender_id')->get();
         $data['product_data'] = Product::with('brand', 'product_image')->select("*")->where('slug', $product_slug)->get()->first();
+        // ragini
+        $data['categories'] = Category::select('id', 'name')->where('status', 1)->get();
         // dd($data);exit;
         return $this->_display('client2.product-detail', $data);
     }
@@ -120,26 +146,25 @@ class ProductController extends Controller
         $product = isset($postdata['product']) && !empty($postdata['product']) ? $postdata['product'] : "";
         $quantity = isset($postdata['quantity']) && !empty($postdata['quantity']) && is_numeric($postdata['quantity']) ? $postdata['quantity'] : "";
         if ($quantity  == '' || $product  == '') {
-            http_response_code(400);
-            exit;
+            return response()->json(['msg' => 'error', 'message' => 'Invalid product or quantity'], 400);
         }
         
         $cart_controller_response = CartController::add($product, $quantity);
-        // print_r($cart_controller_response);exit;
+        
         if ($cart_controller_response) {
             $cart_data = CartController::get_cart_details();
-            $total_cart_quantity = isset($cart_data['cart_total_quantity']) && !empty($cart_data['cart_total_quantity']) ? $cart_data['cart_total_quantity'] : 0;;
+            $total_cart_quantity = isset($cart_data['cart_total_quantity']) && !empty($cart_data['cart_total_quantity']) ? $cart_data['cart_total_quantity'] : 0;
+            $total_cart_price = isset($cart_data['cart_total_price']) && !empty($cart_data['cart_total_price']) ? $cart_data['cart_total_price'] : 0;
+            
             $response_array = array(
                 'cart_total_quantity' => $total_cart_quantity,
+                'cart_total_price' => $total_cart_price,
                 'msg' => 'success'
             );
 
-            echo json_encode($response_array);
-            http_response_code(200);
-            exit;
+            return response()->json($response_array, 200);
         } else {
-            http_response_code(400);
-            exit;
+            return response()->json(['msg' => 'error', 'message' => 'Failed to add product'], 400);
         }
     }
 

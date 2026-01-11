@@ -192,6 +192,23 @@
                                     @enderror
                                 </div>
                             </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="category_id">Category</label>
+                                    <select name="category_id" id="category_id" class="form-control">
+                                        @foreach($categories as $category)
+                                            <option value="{{ $category->id }}" {{ isset($product_data->category_id) && $product_data->category_id == $category->id ? 'selected' : '' }}>
+                                                {{ $category->name }}
+                                            </option>
+                                        @endforeach
+                                    </select>
+                                    @error('category_id')
+                                    <label id="category_id-error" class="error" for="category_id">{{ $message }}</label>
+                                    @enderror
+                                </div>
+                            </div>
+                            
                             {{-- <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="number_text">Product Type</label>

@@ -11,7 +11,10 @@
                     <h3 class="drug_contect_padding">Ihre Bestellung wurde erfolgreich abgeschlossen.</h3>
                     <div class="thank-content-p">
                         <p>Order Placed,
-                            Your Order Id is <strong>{{isset($order_id)? $order_id:''}}</strong> .</p>
+                            Your Order Id is <strong>{{isset($order_id)? $order_id:''}}</strong> .
+                        </p>
+                        <p>  Your User Id is <strong>{{isset($user_id)? $user_id:''}}</strong> .</p>
+                        <p>  Your User Name is <strong>{{isset($shipping_firstname)? $shipping_firstname:''}}</strong> .</p>
                         <p>
                             Eine E-Mail-Bestätigung mit den Details zu Ihrer Bestellung wurde an die angegebene
                             E-Mail-Adresse gesendet.

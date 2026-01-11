@@ -566,7 +566,7 @@ abstract class TestCase extends Assert implements SelfDescribing, Test
     }
 
     /**
-     * @psalm-param class-string<\Throwable> $exception
+     * @psalm-param class-string<Throwable> $exception
      */
     public function expectException(string $exception): void
     {
@@ -1975,11 +1975,11 @@ abstract class TestCase extends Assert implements SelfDescribing, Test
     /**
      * @param ?string $classOrInterface
      *
+     * @psalm-param class-string|null $classOrInterface
+     *
      * @throws ClassNotFoundException
      * @throws DoubleException
      * @throws InterfaceNotFoundException
-     *
-     * @psalm-param class-string|null $classOrInterface
      */
     protected function prophesize($classOrInterface = null): ObjectProphecy
     {

@@ -9,7 +9,7 @@
 
 .mega-menu a:hover,
 .mega-menu>ul.nav>li>a:hover {
-    color: #118acb
+    color: #7F447A
 }
 
 .mega-menu>ul.nav>li {
@@ -49,7 +49,7 @@
 }
 
 .mega-menu>ul.nav>li:hover>a {
-    background-color: #118acb;
+    background-color: #7F447A;
 }
 
 .mega-menu>ul.nav>li>a:hover,
@@ -64,7 +64,7 @@
     background-clip: padding-box;
     background-color: #ffffff;
     border-radius: 10px;
-    border-bottom: 3px solid #118acb;
+    border-bottom: 3px solid #7F447A;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -186,7 +186,7 @@
     line-height: 18px;
     margin-bottom: 26px;
     display: block;
-    color: #118acb;
+    color: #7F447A;
     text-transform: uppercase;
 }
 
@@ -273,7 +273,7 @@
 
 .mega-menu>ul.nav>li .dropdown .menu-row ul li:hover>.sub_menu {
     background: #ffffff;
-    border-bottom: 3px solid #118acb;
+    border-bottom: 3px solid #7F447A;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     left: 100%;
     padding: 30px;
@@ -394,7 +394,7 @@
         line-height: 18px;
     }
     .open-bt-mobile:hover {
-        color: #118acb;
+        color: #7F447A;
     }
     .openNav #bt_container:before {
         background: #000000;
@@ -431,7 +431,7 @@
         font-size: 22px;
     }
     .close-panel:hover {
-        color: #118acb
+        color: #7F447A
     }
     .mega-menu>ul.nav {
         background: #343434;
@@ -545,7 +545,7 @@
     .nav-pills>li.active>a:hover,
     .nav-pills>li.active>a:focus {
         background: none;
-        color: #118acb;
+        color: #7F447A;
     }
     .mega-menu>ul.nav>li .dropdown .menu-column {
         padding: 28px 20px 20px;
