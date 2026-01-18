@@ -27,7 +27,7 @@ use App\Models\Client\Product;
                     <table class="table">
                         <thead>
                             <tr>
-                                <td class="image" colspan="2">PRODUKTNAME</td>
+                                <td class="image" colspan="2">PRODUCT NAME</td>
                                 <td class="product-price">STÜCKPREIS</td>
                                 <td class="quantity">MENGE</td>
                                 <td class="total">GESAMT</td>

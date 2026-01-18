@@ -1,0 +1,123 @@
+.emptybackround {
+    width: 750px;
+    margin: 30px auto 0;
+    padding: 20px;
+    border-bottom: 2px solid #9ec8fa;
+    background-color: #54a6d8;
+}
+.cart-container {
+    width: 750px;
+    margin: 0 auto 30px;
+    background: #fff;
+    border: 1px solid #b5d9f2;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #075baf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shop-confirm-info {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.shop-confirm-info a {
+    color: #075baf;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.shopping-summary-form {
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.form-input-text,
+.form-select,
+.form-textarea {
+    border: 1px solid #9ec8fa;
+    padding: 4px;
+}
+
+.shop-confirm-items {
+  border-collapse: separate;
+  border-spacing: 0 6px; /* horizontal | vertical */
+}
+
+.shop-confirm-payment-delivery {
+  margin-top: 12px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+.shop-confirm-payment-delivery td {
+  vertical-align: middle;
+}
+
+.shop-confirm-payment-delivery .label {
+  width: 60%;
+}
+
+.shop-confirm-payment-delivery .value {
+  width: 40%;
+  text-align: right;
+}
+.shop-confirm-summary {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-family: Arial, sans-serif;
+  }
+
+  .shop-confirm-summary td {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 0;
+  }
+
+  .shop-confirm-summary .item_name {
+    color: #075BAF;
+    text-align: left; /* Left align the label */
+  }
+
+  .shop-confirm-summary .item_price {
+    color: #075BAF; /* Price color (can change if needed) */
+    text-align: right; /* Right align the price */
+  }
+
+  .lastshop-confirm{
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  .basket-button1 {
+    color: #FFF;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 4px 6px;
+    background-color: #F46000;
+    border: 1px solid #EB5600;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+   .basket-button2 {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    padding: 8px 10px;
+    background-color: #F46000;
+    border: 1px solid #EB5600;
+    border-radius: 3px;
+    cursor: pointer;
+  }

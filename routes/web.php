@@ -52,6 +52,14 @@ Route::get('/product/cart', 'Client\CartController@show_cart')->name('product.sh
 Route::get('/product/{product_slug}', 'Client\ProductController@product_preview')->name('client.product.product-preview');
 Route::post('/delete-from-cart', 'Client\ProductController@delete_from_cart')->name('product.delete-from-cart');
 
+Route::get('/shoppingsummary', function () {
+    return view('client2.shoppingsummary');
+})->name('shopping.summary');
+
+Route::get('/pageinformation', function () {
+    return view('client2.pageinformation');
+})->name('page.information');
+
 //ragini
 Route::get('/category/{category_id}/products', 'Client\ProductController@productsByCategory')->name('client2.category-product');
 // Route::get('/category/{category_id}/products', 'Client\ProductController@getProductsByCategory')->name('client2.get-products-by-category');
